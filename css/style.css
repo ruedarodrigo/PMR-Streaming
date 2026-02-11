@@ -35,16 +35,17 @@
 }
 
 /*suscripción*/
-.btn-danger {
-    background-color: #233ec892;
-    border-color: #121898a8;
+.btn-primary {
+    background-color: #133b91;  /* azul más moderno */
+    border-color: #16409a;
     border-radius: 6px;
-    padding: 6px 14px;
 }
-.btn-danger:hover {
-    background-color: #3538dc;
-    border-color: #242a9fa8;
+
+.btn-primary:hover {
+    background-color: #1e4fd8;
+    border-color: #1e4fd8;
 }
+
 
 
 /*links*/
@@ -55,4 +56,9 @@
 .nav-link:hover {
     color: white 
 }
+
+.navbar-nav .nav-link {
+    margin-right: 15px;
+}
+
 
