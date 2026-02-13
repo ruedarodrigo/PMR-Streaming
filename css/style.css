@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Gravitas+One&family=Oswald:wght@200..700&family=Smooch+Sans:wght@100..900&display=swap");
 @import url('https://fonts.cdnfonts.com/css/buchanan');
 
-.cont-banner{ /*Quitar esta clase y agregar el relative de bootstrap*/
-  position: relative;
-  margin-top: 10vh;
-}
-
 .bg-img{
   background-image:
   radial-gradient(
