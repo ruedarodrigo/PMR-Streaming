@@ -3,10 +3,14 @@
 /**navbar**/
 /*barra fija*/
 .navbar {
+    height: 70px; /*altura del navbar*/
     background-color: rgb(18, 18, 18, 0.9);
     backdrop-filter: blur(8px); /*fondo borroso*/
     border-bottom: 1px solid #1f1f1f; /*linea de corte*/
-    padding: 6px 0;
+    
+}
+
+.sticky-top{
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -14,7 +18,7 @@
 
 /*logo*/
 .logo-nav {
-    height: 70px;
+    height: 65px;
     width: auto;
 }
 
@@ -31,7 +35,7 @@
 
 /*suscripción*/
 .btn-primary {
-    background-color: #133b91;  /* azul más moderno */
+    background-color: #133b91;  /* azul nuevo */
     border-color: #16409a;
     border-radius: 6px;
 }
@@ -65,7 +69,7 @@
 .buscador:focus{
     background-color: #1f1f1f;
     border-color:#1e8eff ;
-    box-shadow: 0 0 8px rgba(30, 142, 255, 0.4);
+    box-shadow: 0 0 8px rgba(30, 142, 255, 0.4); /*sobra de fondo cuando paso el mouse*/
     color: white;
 }
 
