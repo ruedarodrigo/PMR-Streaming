@@ -33,14 +33,14 @@
     
 }
 .bandita{
-    background-color: white;
+    background-color: #1e8eff;
     width: 5px;
 }
 
 .edad{
-    color: white;
+    color: #1e8eff;
     padding: 10px;
-    background-color:rgba(0, 0, 0, 0.4);
+    background-color:rgba(0, 0, 0, 0.7);
 }
 
 .btn-grad {
