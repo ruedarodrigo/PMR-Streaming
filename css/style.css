@@ -1,1 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Oswald:wght@200..700&family=Smooch+Sans:wght@100..900&display=swap');
+
+/**navbar**/
+/*barra fija*/
+.navbar {
+    height: 70px; /*altura del navbar*/
+    background-color: rgb(18, 18, 18, 0.9);
+    backdrop-filter: blur(8px); /*fondo borroso*/
+    border-bottom: 1px solid #1f1f1f; /*linea de corte*/
+    
+}
+
+.sticky-top{
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+/*logo*/
+.logo-nav {
+    height: 65px;
+    width: auto;
+}
+
+/*links*/
+.nav-link {
+    color: #cfcfcf;
+    position: relative;
+    transition: color 0.3s ease;
+    margin-right: 15px;
+}
+
+.nav-link:hover {
+    color: #1e8eff 
+}
+
+/*buscador*/
+.buscador{
+    background-color: #1f1f1f;
+    border: 1px solid #2a2a2a;
+    color: white;
+}
+
+.buscador:focus{
+    background-color: #1f1f1f;
+    border-color:#1e8eff ;
+    box-shadow: 0 0 8px rgba(30, 142, 255, 0.4); /*sobra de fondo cuando paso el mouse*/
+    color: white;
+}
+
+/*login*/
+.login-icon{
+    font-size: 1.8rem;/*tamaño*/
+    color: #cfcfcf;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 42px;
+    transition: all 0.3s ease;
+}
+
+.login-icon:hover{
+    color:#1e8eff;
+    transform: scale(1.1);/*se agranda*/
+}
+
+.btn-moderno{
+    background: linear-gradient(135deg, #134cbf, #1e8eff); 
+    border: none;
+    border-radius: 30px;
+    padding: 6px 20px;
+    font-weight: 500;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-moderno:hover{
+    transform: scale(1.05);
+    box-shadow:  0 4px 15px rgba(30, 142, 255, 0.5) ;
+    color: white;
+}
+
+/*!responsive¡*/
+@media (max-width: 992px){
+    .navbar-collapse{
+        background-color: rgba(26, 26, 26, 0.95);
+        backdrop-filter: blur(8px);
+        padding: 20px;
+        margin-top: 10px;
+        border-radius: 12px;
+        animation: fadeIn 0.3s ease-in-out; 
+    }
+
+    .logo-nav {
+        height: 45px; 
+    }
+
+
+}
+
+
