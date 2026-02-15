@@ -169,6 +169,80 @@
   text-decoration: none;
 }
 
+/**banner de suscripcion**/
+.banner-suscripcion{
+    position: relative;
+    height: 400px; 
+    overflow: hidden; /*se borra si algo sobresale*/
+    margin: auto;
+}
+
+.banner-img{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*para que no se deforme*/
+    top: 0;
+    left: 0;
+}
+
+.banner-contenido{
+    position: relative;
+    z-index: 2;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000076;
+}
+
+.titulo-banner{
+    font-size: 2rem;
+    font-weight: 600;/*grosor para el titulo*/
+    margin-bottom: 15px;
+}
+
+.sub-banner{
+    margin-bottom: 25px;
+    color: #d1d1d1;
+}
+
+.botones-banner{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.boton-primary{
+    background-color: #163f90bf;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-weight: 500;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.boton-banner:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 25px rgba(30, 142, 255, 0.6);
+}
+
+.boton-secondary{
+    border: #11589e;
+    padding: 14px 40px;
+    border-radius: 50px;
+    color: #1e8eff;
+    transition: all 0.3s ease;
+}
+
+.boton-secondary:hover{
+    background-color: #1e8eff;
+    color: white;
+}
 @media(width >= 768px){
   .bg-img{
     height: 400px;
