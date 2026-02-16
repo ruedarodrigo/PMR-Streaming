@@ -178,7 +178,7 @@
   }
 }
 
-@media(width >= 1025px){
+@media(width > 1024px){
   .bg-img{
     height: 90vh;
     background-image:
@@ -214,9 +214,64 @@
   }
 }
 
-/* .card img{
-  height: 120px;
-} */
+/* -----COMIENZA ESTILOS SECCION PELIS SUGERIDAS -----*/
+
+.card {
+  transition: all 300ms ease;
+  cursor: pointer;
+  border-radius: 10px;
+  min-width:200px;
+  flex-shrink: 0; /*Para que no se achiquen las cards*/
+  
+  &:hover{
+    transform: scale(1.2);
+    z-index: 10;
+    border: 3px solid linen;
+  }
+}
+
+.card img{
+  border-radius: 10px;
+}
+
+.carousel-inner{
+  overflow: visible; /*Permite que las cards se agranden con el hover*/
+}
+
+.carousel-control-prev, .carousel-control-next{ /*Color claro para flechas carousel*/
+  filter: invert(0);
+}
+
+.row>*{  /*Le cambie el padding con el que viene la grilla de bootstrap*/
+  padding-left: 3px!important;
+  padding-right: 3px!important;
+}
+
+.contenedor{
+  display:flex;
+  gap: 16px;
+  overflow-x: auto; /*Permite que el contenido se desborde sin estirar la pagina hacia los costados*/
+  scroll-behavior: smooth;
+  padding: 16px 0;
+}
+
+.contenedor::-webkit-scrollbar{  
+  display: none;
+}
+
+
+@media (width > 1024px){  /*En dispositivos grandes se ve solo carousel bootstrap*/
+  .carousel-md{
+    display: none;
+  }
+}
+
+@media (width <= 1024px){  /*En dispositivos sm y md desaparece el carousel y aparece grilla flexbox*/
+  .carousel-lg{
+    display: none;
+  }
+}
+/*-----FINALIZAN ESTILOS SECCION PELIS SUGERIDAS-----*/
 
 
 
