@@ -271,13 +271,13 @@
     transition: all 0.3s ease;
 }
 
-.boton-banner:hover {
+.boton-primary:hover {
     transform: scale(1.08);
     box-shadow: 0 8px 25px rgba(30, 142, 255, 0.6);
 }
 
 .boton-secondary{
-    border: #11589e;
+    border: 2px solid #11589e;
     padding: 14px 40px;
     border-radius: 50px;
     color: #1e8eff;
@@ -287,6 +287,42 @@
 .boton-secondary:hover{
     background-color: #1e8eff;
     color: white;
+}
+
+/*responsive banner suscripcion*/
+@media (max-whidth: 992px) {
+    .titulo-banner{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px){
+    .banner-suscripcion{
+        height: auto; /*ya no queda fijo */
+    }
+
+    .banner-contenido{
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .titulo-banner{
+        font-size: 1.5rem;
+    }
+
+    .sub-banner{
+        font-size: 1rem;
+    }
+
+    .botones-banner{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .botones-banner a{
+        width: 100%;
+        text-align: center;
+    }
 }
 
 
