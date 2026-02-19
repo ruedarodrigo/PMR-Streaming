@@ -411,6 +411,10 @@
   }
 }
 
+.form-select{
+  width: 15%!important;
+  margin-left: 5px;
+}
 
 
 

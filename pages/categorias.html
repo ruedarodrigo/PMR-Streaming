@@ -85,11 +85,20 @@
     </header>
     <main class="container">
       <h3 class="text-light text-center mt-4">Conoce nuestra colección de Ciencia Ficcion</h3>
-      <div id="Cuasi-control-paginacion" class="carousel slide carousel-fade mt-4">
+      <div class="d-flex align-items-baseline justify-content-end pe-1 mt-3">
+        <label for="ordenar">Ordenar por:</label>
+        <select class="form-select" id="ordenar">
+          <option selected>Año de lanzamiento</option>
+          <option value="1">A-Z</option>
+          <option value="2">Z-A</option>
+          <option value="3"></option>
+        </select>
+      </div>
+      <div id="Cuasi-control-paginacion" class="carousel slide carousel-fade mt-2">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container">
-              <div class="row row-gap-3 galeria">
+              <div class="row row-gap-2 galeria">
                 <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/Godzilla.webp" alt="Godzilla"></div>
                 <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/Altered.jpg" alt="Altered"></div>
                 <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/granDiluvio.jpg" alt="Gran diluvio"></div>
