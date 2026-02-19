@@ -26,7 +26,7 @@
       <div class="container-fluid">
 
                 <!-- Logo -->
-                <a class="navbar-brand fw-bold d-flex alingn-items-center" href="./index.html">
+                <a class="navbar-brand fw-bold d-flex alingn-items-center" href="../index.html">
                     <img src="../img/logoNavbar.png" alt="PMG logo"  class="logo-nav">
                   </a>
                   
@@ -41,7 +41,7 @@
                     <!-- Links -->
                     <ul class="navbar-nav  me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item"> 
-                      <a class="nav-link active" href="./index.html">Inicio</a>
+                      <a class="nav-link active" href="../index.html">Inicio</a>
                     </li>
                     <!--Categorias desplegable-->
                     <li class="nav-item dropdown">
@@ -85,16 +85,16 @@
     </header>
     <main class="container">
       <h3 class="text-light text-center mt-4">Conoce nuestra colección de Ciencia Ficcion</h3>
-      <div class="d-flex align-items-baseline justify-content-end pe-1 mt-3">
-        <label for="ordenar">Ordenar por:</label>
-        <select class="form-select" id="ordenar">
-          <option selected>Año de lanzamiento</option>
-          <option value="1">A-Z</option>
-          <option value="2">Z-A</option>
-          <option value="3"></option>
+      <div class="d-flex justify-content-end pe-1 mt-3"> <!-- Caja de ordenar por: -->
+        <select class="form-select">
+          <option selected class="text-center">Ordenar por:</option>
+          <option value="1">Año de lanzamiento</option>
+          <option value="2">Mas taquilleras</option>
+          <option value="3">A-Z</option>
+          <option value="3">Z-A</option>
         </select>
       </div>
-      <div id="Cuasi-control-paginacion" class="carousel slide carousel-fade mt-2">
+      <div id="Cuasi-control-paginacion" class="carousel slide carousel-fade mt-2"> <!-- Carousel que simula control de paginacion -->
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container">
@@ -178,7 +178,7 @@
         </div>
       </div>
       <div class="text-center my-5">
-      <button type="button" class="btn btn-light fw-semibold">Volver al inicio</button> 
+      <a href="../index.html"><button type="button" class="btn btn-light fw-semibold">Volver al inicio</button></a>
       </div>
     </main>
       <footer class="bg-dark-subtle text-white pt-4 pb-3">

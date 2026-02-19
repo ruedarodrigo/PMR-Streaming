@@ -384,38 +384,6 @@
     }
 }
 
-/*-----COMIENZAN ESTILOS PARA PAGINAS DE CATEGORIAS-----*/
-
-.carousel-indicators{
-  position: relative;
-  margin-top: 20px;
-}
-
-.carousel-indicators button{
-  width: 40px!important;
-  height: 40px!important;
-  text-indent: 0!important;
-}
-
-#boton-flecha{
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.galeria img{
-  cursor: pointer;
-  transition: all 300ms ease;
-  border: solid 2px rgba(255, 255, 255, 0);
-  &:hover{
-    transform: scale(1.1);
-    border: solid 2px rgb(255, 255, 255);
-  }
-}
-
-.form-select{
-  width: 15%!important;
-  margin-left: 5px;
-}
-
 /*Categorias Sugeridas*/
 
 .categoria-card {
@@ -435,6 +403,43 @@
   text-transform: uppercase;
   font-size: 1.3rem;
 }
+
+/*-----COMIENZAN ESTILOS PARA PAGINAS DE CATEGORIAS-----*/
+
+.carousel-indicators{
+  position: relative;
+  margin-top: 20px;
+}
+
+.carousel-indicators button{
+  width: 40px!important;
+  height: 40px!important;
+  text-indent: 0!important;
+}
+
+#boton-flecha{
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  &:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.galeria img{
+  cursor: pointer;
+  transition: all 300ms ease;
+  border: solid 2px rgba(255, 255, 255, 0);
+  &:hover{
+    transform: scale(1.1);
+    border: solid 2px rgb(255, 255, 255);
+  }
+}
+
+.form-select{
+  width: 200px!important;
+}
+
+
 
 
 
