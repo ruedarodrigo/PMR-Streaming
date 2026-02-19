@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mirá las mejores películas y series en un solo lugar. Con PMR pochocleá sin limites ni interrupciones. Contenido actualizado nacional e internacional."
+    />
+    <meta
+      name="author"
+      content="Maira Galván, Patricio Moyano, Rodrigo Rueda"
+    />
+    <link rel="shortcut icon" href="./img/favic.jpeg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>PMR Plus</title>
+  </head>
+<body>
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container-fluid">
+
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold d-flex alingn-items-center" href="./index.html">
+                    <img src="./img/logoNavbar.png" alt="PMG logo"  class="logo-nav">
+                  </a>
+                  
+                  <!-- hamburguesa -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+                  <!-- Contenido del navbar -->
+                  <div class="collapse navbar-collapse" id="navbarContenido">
+                    
+                    <!-- Links -->
+                    <ul class="navbar-nav  me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item"> 
+                      <a class="nav-link active" href="./index.html">Inicio</a>
+                    </li>
+                    <!--Categorias desplegable-->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Categorias
+                      </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li>
+                            <a class="dropdown-item" href="./pages/categorias.html">Ciencia Ficcion</a>
+                          </li>
+                          <li>
+                            <a class=" dropdown-item" href="./pages/categorias2.html">Infantiles</a>
+                          </li>
+                          <li>
+                            <a class=" dropdown-item" href="./pages/error404.html">Terror</a>
+                          </li>
+                          <li>
+                            <a class=" dropdown-item" href="./pages/error404.html">Accion</a>
+                          </li>
+                        </ul>
+                      </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./pages/detalleSerie.html">Series</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./pages/detallePelicula.html">Películas</a>
+                        </li>
+                      
+                    </ul>
+
+                    <!-- Buscador -->
+                    <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-3">
+                      <form class="d-flex">
+                        <input class="form-control me-2 buscador" type="search" placeholder="Buscar...">
+                        <button class="btn btn-outline-light" type="submit">
+                          <i class="bi bi-search"></i>
+                        </button>
+                      </form>
+                      
+                      <div class="d-flex align-items-center gap-3 ">
+                        <!-- login -->
+                        <a href="./pages/login.html" class="login-icon ">
+                          <i class="bi bi-person-circle"></i>
+                        </a>
+                    <!--suscripcion-->
+                        <a href="./pages/suscripcion.html" class="btn btn-moderno">Suscribirse</a>
+                      </div>
+                    </div>
+                
+              </div>
+        </nav>
+        
+    </header>
+    <main>
+    </main>
+</body>
+</html>
