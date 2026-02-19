@@ -384,7 +384,22 @@
     }
 }
 
+/*-----COMIENZAN ESTILOS PARA PAGINAS DE CATEGORIAS-----*/
 
+.carousel-indicators{
+  position: relative;
+  margin-top: 20px;
+}
+
+.carousel-indicators button{
+  width: 40px!important;
+  height: 40px!important;
+  text-indent: 0!important;
+}
+
+#boton-flecha{
+  background-color: rgba(0, 0, 0, 0);
+}
 
 
 
