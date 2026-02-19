@@ -420,6 +420,7 @@
 #boton-flecha{
   background-color: rgba(0, 0, 0, 0);
   border-radius: 50%;
+  scale: 0.7;
   &:hover{
     background-color: rgba(0, 0, 0, 0.6);
   }
@@ -439,6 +440,14 @@
   width: 200px!important;
 }
 
+@media (width > 1400px){
+  .carousel-control-next {
+    right: 300px;
+}
+  .carousel-control-prev{
+    left: 300px;
+  }
+}
 
 
 
