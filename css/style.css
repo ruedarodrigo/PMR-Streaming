@@ -467,11 +467,117 @@
   }
 }
 
+/**Pagina detalle serie/ pelicula**/
+.serie-principal{
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
 
+.serie-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.serie-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+  to right,
+  rgba(0,0,0,0.9) 25%,
+  rgba(0,0,0,0.4) 60%,
+  rgba(0,0,0,0.1) 100%
+  );
+}
 
+.serie-info{
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  transform: translateY(-50%);
+  max-width: 500px;
+  z-index: 2;
+}
 
+.serie-titulo{
+  font-size: 3rem;
+  font-weight: bold;
+}
 
+.serie-descripcion{
+  margin-top: 15px;
+  color: #cfcfcf;
+}
 
+.serie-datos{
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  color: #aaa;
+}
 
+.serie-seccion-titular{
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
 
+.serie-seccion-card{
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.serie-capitulo-card:hover{
+  transform: scale(1.05);
+}
+
+.serie-capitulo-info{
+  padding: 10px;
+}
+
+.serie-capitulo-titulo{
+  font-size: 0.9rem;
+}
+
+.serie-capitulo-duracion{
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+/*tarjetas series*/
+
+.serie-card{
+  border-radius: 10px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.serie-card:hover{
+  transform: scale(1.05);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  filter: invert(1);
+}
+
+/*Responsive*/
+@media (max-width: 768px){
+.serie-principal{
+  height: 50vh;
+}
+
+.serie-info{
+  left: 20px;
+  right: 20px;
+}
+
+.serie-titulo{
+  font-size: 2rem;
+}
+}

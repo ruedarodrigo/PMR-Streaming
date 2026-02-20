@@ -110,50 +110,50 @@
         </nav>
         
     </header>
-    <main class="container mt-4">
+    <main>
         <!--Video/imagen-->
-        <section class="serie-dark mb-4">
-            <video autoplay muted loop controls class="w-100 rounded shadow">
+        <section class="serie-principal">
+            <video autoplay muted loop playsinline class="serie-video">
                 <source src="../video/Trailer.mp4" type="video/mp4">
                 <source src="../video/Trailer.webm" type="video/webm">
             </video>
-        </section>
 
-        <!--informacion de dark-->
-          <section class="serie-info mb-5">
-            <h1 class="titulo-serie">Dark</h1>
+            <div class="serie-overlay"></div>
 
-            <p class="descripcion-serie">
-                Cuando dos niños desaparecen en el pequeño pueblo alemán de Winden,
-                se revela un misterio que conecta cuatro familias a lo largo del tiempo.
-            </p>
+            <div class="serie-info">
+              <h1 class="serie-titulo">Dark</h1>
 
-            <div class="datos-serie">
+              <p class="serie-descripcion">
+                  Cuando dos niños desaparecen en el pequeño pueblo alemán de Winden,
+                  se revela un misterio que conecta cuatro familias a lo largo del tiempo.
+              </p>
+
+              <div class="serie-datos">
                 <span>Año: 2017</span>
                 <span>1 Temporada</span>
                 <span>+16</span>
                 <span>4K</span>
+              </div>
+
+              <button class="btn btn-moderno mt-3">Ver ahora</button>
             </div>
-
-            <button class="btn btn-moderno mt-3">Ver ahora</button>
-          </section>
-
+        </section>
 
         <!--Capitulos-->
-        <section class="mt-5"> 
+        <section class="container mt-5"> 
           <h3 class=" pb-3">Temporada 1</h3>
             <h4 class="titulo-seccion"> Capitulos</h4>
-            <div id="carouselCapitulos" class="carousel slide">
+            <div id="carouselCapitulos" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <!--Capitulos-->
                 <div class="carousel-item active">
-                  <div class="row">
+                  <div class="row gx-2">
                     <div class="col-6 col-md-4 col-lg-2">
                       <div class="card card-capitulo">
-                        <img src="../img/serie-dark.jpg" alt="capitulo 1" class="card-img-top">
-                        <div class="card-body">
-                          <h6>Capitulo 1</h6>
-                          <p>56 min</p>
+                        <img src="../img/serie-dark.jpg" alt="capitulo 1" class="card-img-top d-block w-100">
+                        <div class="card-body p-2">
+                          <h6 class="mb-1 ">Capitulo 1</h6>
+                          <p class="mb-0">56 min</p>
                         </div>
                       </div>
                     </div>
@@ -161,9 +161,9 @@
                     <div class="col-6 col-md-4 col-lg-2">
                       <div class="card card-capitulo">
                         <img src="../img/serie-dark.jpg" alt="capitulo 2">
-                        <div class="card-body">
-                          <h6>Capitulo 2</h6>
-                          <p>50 min</p>
+                        <div class="card-body p-2">
+                          <h6 class="mb-1">Capitulo 2</h6>
+                          <p class="mb-0">50 min</p>
                         </div>
                       </div>
                     </div>
@@ -171,27 +171,27 @@
                     <div class="col-6 col-md-4 col-lg-2">
                       <div class="card card-capitulo">
                         <img src="../img/serie-dark.jpg" alt="capitulo 3">
-                        <div class="card-body">
-                          <h6>Capitulo 3</h6>
-                          <p>51 min</p>
+                        <div class="card-body p-2">
+                          <h6 class="mb-1">Capitulo 3</h6>
+                          <p class="mb-0">51 min</p>
                         </div>
                       </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
                       <div class="card card-capitulo">
                         <img src="../img/serie-dark.jpg" alt="capitulo 4">
-                        <div class="card-body">
-                          <h6>Capitulo 4</h6>
-                          <p>49 min</p>
+                        <div class="card-body p-2">
+                          <h6 class="mb-1">Capitulo 4</h6>
+                          <p class="mb-0">49 min</p>
                         </div>
                       </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
                       <div class="card card-capitulo">
                         <img src="../img/serie-dark.jpg" alt="capitulo 5">
-                        <div class="card-body">
-                          <h6>Capitulo 5</h6>
-                          <p>56 min</p>
+                        <div class="card-body p-2">
+                          <h6 class="mb-1">Capitulo 5</h6>
+                          <p class="mb-0">56 min</p>
                         </div>
                       </div>
                     </div>
@@ -204,45 +204,45 @@
                   <div class="col-6 col-md-4 col-lg-2">
                     <div class="card card-capitulo">
                       <img src="../img/serie-dark.jpg" alt="Capitulo 6">
-                      <div class="card-body">
-                        <h6>Capitulo 6</h6>
-                        <p>52 min</p>
+                      <div class="card-body p-2">
+                        <h6 class="mb-1">Capitulo 6</h6>
+                        <p class="mb-0">52 min</p>
                       </div>
                     </div>
                   </div>
                   <div class="col-6 col-md-4 col-lg-2">
                     <div class="card card-capitulo">
                       <img src="../img/serie-dark.jpg" alt="Capitulo 7">
-                      <div class="card-body">
-                        <h6>Capitulo 7</h6>
-                        <p>60 min</p>
+                      <div class="card-body p-2">
+                        <h6 class="mb-1">Capitulo 7</h6>
+                        <p class="mb-0">60 min</p>
                       </div>
                     </div>
                   </div>
                   <div class="col-6 col-md-4 col-lg-2">
                     <div class="card card-capitulo">
                       <img src="../img/serie-dark.jpg" alt="Capitulo 8">
-                      <div class="card-body">
-                        <h6>Capitulo 8</h6>
-                        <p>57 min</p>
+                      <div class="card-body p-2">
+                        <h6 class="mb-1">Capitulo 8</h6>
+                        <p class="mb-0">57 min</p>
                       </div>
                     </div>
                   </div>
                   <div class="col-6 col-md-4 col-lg-2">
                     <div class="card card-capitulo">
                       <img src="../img/serie-dark.jpg" alt="Capitulo 9">
-                      <div class="card-body">
-                        <h6>Capitulo 9</h6>
-                        <p>59 min</p>
+                      <div class="card-body p-2">
+                        <h6 class="mb-1">Capitulo 9</h6>
+                        <p class="mb-0">59 min</p>
                       </div>
                     </div>
                   </div>
                   <div class="col-6 col-md-4 col-lg-2">
                     <div class="card card-capitulo">
                       <img src="../img/serie-dark.jpg" alt="Capitulo 10">
-                      <div class="card-body">
-                        <h6>Capitulo 10</h6>
-                        <p>50 min</p>
+                      <div class="card-body p-2">
+                        <h6 class="mb-1">Capitulo 10</h6>
+                        <p class="mb-0">50 min</p>
                       </div>
                     </div>
                   </div>
@@ -256,14 +256,14 @@
                 <span class="carousel-control-prev-icon"></span>
               </button>
 
-              <button class="carousel-control-next" type="button" data-bs-target="#carpuselCapitulos" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselCapitulos" data-bs-slide="next">
                 <span class="carousel-control-next-icon"></span>
               </button>
             </div>
         </section>
 
         <!--Series relacionadas-->
-        <section class="mt-5">
+        <section class="container mt-5">
           <h3 class="titulo-seccion">Series Relacionadas</h3>
           <div id="carouselRelacionadas" class="carousel slide">
             <div class="carousel-inner">
@@ -271,7 +271,7 @@
               <div class="carousel-item active">
                 <div class="row">
                   <div class="col-6 col-md-4 col-lg-2">
-                    <img src="../img/s-relacionadas/12monos.jpg" alt=" Los doce monos" class="img-fluid tarjeta-serie">
+                    <img src="../img/s-relacionadas/12monos.jpg" alt=" Los doce monos" class="d-block w-100 tarjeta-serie ">
                   </div>
                   <div class="col-6 col-md-4 col-lg-2">
                     <img src="../img/s-relacionadas/1899.jpg" alt="1899" class="img-fluid tarjeta-serie">
@@ -312,13 +312,13 @@
               <span class="carousel-control-prev-icon"></span>
             </button>
 
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselRelacionadas" data-bs-slide="nex">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselRelacionadas" data-bs-slide="next">
               <span class="carousel-control-next-icon"></span>
             </button>
           </div>
         </section>
 
-        <section class="mt-5 mb-5">
+        <section class="container mt-5 mb-5">
           <h3 class="titulo-seccion">Estrenos</h3>
           <div id="carouselEstrenos" class="carousel slide">
             <div class="carousel-inner">
