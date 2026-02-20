@@ -456,6 +456,9 @@
   .btn-prev{
     left: 200px;
   }
+  .lg-h3{
+    font-size: 28px;
+  }
 }
 
 @media (width > 1400px){
