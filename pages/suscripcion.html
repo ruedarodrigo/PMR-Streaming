@@ -26,7 +26,7 @@
       <div class="container-fluid">
 
                 <!-- Logo -->
-                <a class="navbar-brand fw-bold d-flex alingn-items-center" href="./index.html">
+                <a class="navbar-brand fw-bold d-flex alingn-items-center" href="../index.html">
                     <img src="../img/logoNavbar.png" alt="PMG logo"  class="logo-nav">
                   </a>
                   
@@ -41,7 +41,7 @@
                     <!-- Links -->
                     <ul class="navbar-nav  me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item"> 
-                      <a class="nav-link active" href="./index.html">Inicio</a>
+                      <a class="nav-link active" href="../index.html">Inicio</a>
                     </li>
                     <!--Categorias desplegable-->
                     <li class="nav-item dropdown">
@@ -50,10 +50,10 @@
                       </a>
                       <ul class="dropdown-menu dropdown-menu-dark">
                         <li>
-                          <a class="dropdown-item" href="./pages/detalleSerie.html">Series</a>
+                          <a class="dropdown-item" href="../pages/detalleSerie.html">Series</a>
                         </li>
                         <li>
-                          <a class=" dropdown-item" href="./pages/detallePelicula.html">Películas</a>
+                          <a class=" dropdown-item" href="../pages/detallePelicula.html">Películas</a>
                         </li>
                         </ul>
                       </li>
@@ -71,11 +71,11 @@
                       
                       <div class="d-flex align-items-center gap-3 ">
                         <!-- login -->
-                        <a href="./pages/login.html" class="login-icon ">
+                        <a href="../pages/login.html" class="login-icon ">
                           <i class="bi bi-person-circle"></i>
                         </a>
                     <!--suscripcion-->
-                    <a href="./pages/suscripcion.html" class="btn btn-moderno">Suscribirse</a>
+                    <a href="../pages/suscripcion.html" class="btn btn-moderno">Suscribirse</a>
                   </div>
                 </div>
                 
@@ -83,7 +83,7 @@
         </nav>
         
     </header>
-    <main>
+    <main class="sub-body sub-fondo">
 <section class="container my-5">
 
   <h2 class="text-center mb-5 titulo-categoria">Elegí tu Plan</h2>
@@ -92,10 +92,10 @@
 
     <!-- Plan Básico -->
     <div class="col-12 col-md-6 col-lg-4">
-      <div class="card bg-dark text-white shadow h-100 border-0">
+      <div class="sub-card bg-dark text-white shadow h-100 border-0">
         <div class="card-body">
           <h4 class="titulo-categoria">Básico</h4>
-          <h3 class="my-3">$5.99</h3>
+          <h3 class="my-3">$2.99</h3>
           <ul class="list-unstyled">
             <li>✔ Calidad HD</li>
             <li>✔ 1 dispositivo</li>
@@ -107,10 +107,10 @@
 
     <!-- Plan Estándar -->
     <div class="col-12 col-md-6 col-lg-4">
-      <div class="card bg-primary text-white shadow h-100 border-0">
+      <div class="sub-card bg-primary text-white shadow h-100 border-0">
         <div class="card-body">
           <h4 class="titulo-categoria">Estándar</h4>
-          <h3 class="my-3">$9.99</h3>
+          <h3 class="my-3">$4.99</h3>
           <ul class="list-unstyled">
             <li>✔ Full HD</li>
             <li>✔ 2 dispositivos</li>
@@ -122,10 +122,10 @@
 
     <!-- Plan Premium -->
     <div class="col-12 col-md-6 col-lg-4">
-      <div class="card bg-dark text-white shadow h-100 border-0">
+      <div class="sub-card bg-dark text-white shadow h-100 border-0">
         <div class="card-body">
           <h4 class="titulo-categoria">Premium</h4>
-          <h3 class="my-3">$14.99</h3>
+          <h3 class="my-3">$9.99</h3>
           <ul class="list-unstyled">
             <li>✔ 4K Ultra HD</li>
             <li>✔ 4 dispositivos</li>
@@ -137,45 +137,69 @@
 
   </div>
 </section>
-<section class="container my-5">
-  
+<section class="my-5">
+  <div class="container my-5">
   <h2 class="text-center mb-4 titulo-categoria">Crear Cuenta</h2>
 
   <div class="row justify-content-center">
     <div class="col-12 col-md-8 col-lg-6">
       
-      <form action="404.html">
+      <form action="../pages/error404.html">
 
         <div class="mb-3">
           <label class="form-label">Nombre</label>
-          <input type="text" class="form-control" required>
+          <input
+          type="text"
+          class="form-control"
+          id="nombre"
+          placeholder="Ej: Ernesto"
+          minlength="2"
+          maxlength="50"
+          required>
         </div>
 
         <div class="mb-3">
           <label class="form-label">Apellido</label>
-          <input type="text" class="form-control" required>
+          <input 
+          type="text"
+          class="form-control"
+          id="apellido"
+          placeholder="Ej: Cabral"
+          minlength="2"
+          maxlength="50"
+          required>
         </div>
 
         <div class="mb-3">
           <label class="form-label">Email</label>
-          <input type="email" class="form-control" required>
+          <input 
+          type="email" 
+          class="form-control" 
+          placeholder="ernestocabr@gmail.com"
+          required>
         </div>
 
         <div class="mb-3">
           <label class="form-label">Contraseña</label>
-          <input type="password" class="form-control" required>
+          <input 
+          type="password" 
+          class="form-control"
+          placeholder="Escribe una Contraseña" 
+          required>
         </div>
 
         <div class="d-grid">
-          <button type="submit" class="btn btn-primary">
+          <button 
+          type="submit" 
+          class="btn btn-primary">
             Crear Cuenta
           </button>
         </div>
+      </div>
+    </form>
 
-      </form>
-
-    </div>
   </div>
+</div>
 
 </section>
 
@@ -212,7 +236,7 @@
                             >
                         </li>
                         <li>
-                            <a href="../pages/categoriasSugeridas.html" class="text-white me-3"
+                            <a href="../index.html" class="text-white me-3"
                             >Categorias Sugeridas</a
                             >
                         </li>

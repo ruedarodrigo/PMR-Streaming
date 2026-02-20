@@ -404,7 +404,59 @@
   font-size: 1.3rem;
 }
 
+/*Subscripción*/
 
+.sub-body {
+  background-color: #1a1d20;
+  color: white;
+}
+
+.sub-card {
+  border-radius: 12px;
+}
+
+.sub-card:hover {
+  transform: scale(1.03);
+  transition: 0.3s ease;
+}
+
+.sub-footer {
+  background-color: #1a1d20;
+}
+
+/*Opcional*/
+.sub-fondo {
+  position: relative;
+  background-image: url('../img/backgroundSub.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+/* Overlay oscuro */
+.sub-fondo:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(1px);
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+/* Asegura que el contenido quede arriba */
+.sub-fondo .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Caja del formulario 
+.form-card {
+  background: rgba(15, 15, 15, 0.85);
+  border-radius: 15px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}*/
 
 
 
