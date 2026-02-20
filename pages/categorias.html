@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mirá las mejores películas y series en un solo lugar. Con PMR pochocleá sin limites ni interrupciones. Contenido actualizado nacional e internacional."
+    />
+    <meta
+      name="author"
+      content="Maira Galván, Patricio Moyano, Rodrigo Rueda"
+    />
+    <link rel="shortcut icon" href="../img/logoNavbar.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>PMR - Ciencia Ficcion</title>
+  </head>
+<body>
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container-fluid">
+
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold d-flex alingn-items-center" href="../index.html">
+                    <img src="../img/logoNavbar.png" alt="PMG logo"  class="logo-nav">
+                  </a>
+                  
+                  <!-- hamburguesa -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+                  <!-- Contenido del navbar -->
+                  <div class="collapse navbar-collapse" id="navbarContenido">
+                    
+                    <!-- Links -->
+                    <ul class="navbar-nav  me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item"> 
+                      <a class="nav-link active" href="../index.html">Inicio</a>
+                    </li>
+                    <!--Categorias desplegable-->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Categorias
+                      </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li>
+                            <a class="dropdown-item" href="../pages/categorias.html">Ciencia Ficcion</a>
+                          </li>
+                          <li>
+                            <a class=" dropdown-item" href="../pages/categorias2.html">Infantiles</a>
+                          </li>
+                          <li>
+                            <a class=" dropdown-item" href="../pages/error404.html">Terror</a>
+                          </li>
+                          <li>
+                            <a class=" dropdown-item" href="../pages/error404.html">Accion</a>
+                          </li>
+                          <li>
+                            <a class=" dropdown-item" href="../pages/error404.html">Comedia</a>
+                          </li>
+                          <li>
+                            <a class=" dropdown-item" href="../pages/error404.html">Documentales</a>
+                          </li>
+                          <li>
+                            <a class=" dropdown-item" href="../pages/error404.html">Policiales</a>
+                          </li>
+                          <li>
+                            <a class=" dropdown-item" href="../pages/error404.html">Anime</a>
+                          </li>
+                          <li>
+                            <a class=" dropdown-item" href="../pages/error404.html">Doramas</a>
+                          </li>
+                        </ul>
+                      </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../pages/detalleSerie.html">Series</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../pages/detallePelicula.html">Películas</a>
+                        </li>
+                      
+                    </ul>
+
+                    <!-- Buscador -->
+                    <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-3">
+                      <form class="d-flex">
+                        <input class="form-control me-2 buscador" type="search" placeholder="Buscar...">
+                        <button class="btn btn-outline-light" type="submit">
+                          <i class="bi bi-search"></i>
+                        </button>
+                      </form>
+                      
+                      <div class="d-flex align-items-center gap-3 ">
+                        <!-- login -->
+                        <a href="../pages/login.html" class="login-icon ">
+                          <i class="bi bi-person-circle"></i>
+                        </a>
+                    <!--suscripcion-->
+                        <a href="../pages/suscripcion.html" class="btn btn-moderno">Suscribirse</a>
+                      </div>
+                    </div>
+              </div>
+        </nav>    
+    </header>
+    <main class="container">
+      <h3 class="text-light text-center mt-4">Conoce nuestra colección de Ciencia Ficcion</h3>
+      <div class="d-flex justify-content-end pe-1 mt-3"> <!-- Caja de ordenar por: -->
+        <select class="form-select">
+          <option selected class="text-center">Ordenar por:</option>
+          <option value="1">Año de lanzamiento</option>
+          <option value="2">Mas taquilleras</option>
+          <option value="3">A-Z</option>
+          <option value="3">Z-A</option>
+        </select>
+      </div>
+      <div id="Cuasi-control-paginacion" class="carousel slide carousel-fade mt-2"> <!-- Carousel que simula control de paginacion -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row row-gap-2 galeria">
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/Godzilla.webp" alt="Godzilla"></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/Altered.jpg" alt="Altered"></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/granDiluvio.jpg" alt="Gran diluvio"></div>
+                <div class="col-md-6 col-lg-3"><a href="../pages/detalleSerie.html"><img class="w-100" src="../img/series/Sci-fi-s/dark.jpg" alt="dark"></a></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/Sinsajo1.webp" alt="Sinsajo1"></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/ElmitodeSisifo.jpg" alt="MitodeSisifo"></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/Sinsajo2.webp" alt="Sinsajo2"></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/Lejos.jpg" alt="Serie Lejos"></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/terminator.webp" alt="terminator"></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/Omnisciente.jpg" alt="Omnisciente"></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/Transformers.webp" alt="Transformers"></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/OrdenSecreta.jpg" alt="OrdenSecreta"></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/Ragnarok.jpg" alt="Ragnarok"></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/Undiamasparamorir.webp" alt="Undiamasparamorir"></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/sense8.jpg" alt="sense8"></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/avatar-fyc.jpg" alt="avatar3"></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row row-gap-2 galeria">
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/ligaJusticia.avif" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/ViajealCentrodelaTierra.webp" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/StrangerThings.jpg" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/Disomnia.jpg" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/StrangerThings.jpg" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/cielodeMedianoche.jpg" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/TheOA.jpg" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/DurantelaTormenta.jpg" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/TheOne.jpg" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/Extincion.jpg" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/theRain.jpg" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/GodzillavsKong.webp" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/Archivo81.jpg" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/Venon.webp" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/BlackMirror.jpg" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/TitanesdelPacifico.webp" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row row-gap-2 galeria">
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/linternaVerde.webp" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/LosDetectivesDifuntos.jpg" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/TheDiscovery.jpg" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/Vwars.jpg" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/ResidentEvil.webp" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/Lucifer.jpg" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/MadMax.webp" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/TheWitcher.jpg" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/RebelMoon.jpg" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/Merlina.jpg" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/Matrix.webp" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/Manifiesto.jpg" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/Readyplayer.webp" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/Osmosis.jpg" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/pelis/Sci-fi-pel/ProyectoAdam.jpg" alt=""></div>
+                <div class="col-md-6 col-lg-3"><img class="w-100" src="../img/series/Sci-fi-s/ElmañanaYyo.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#Cuasi-control-paginacion" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">1</button>
+          <button type="button" data-bs-target="#Cuasi-control-paginacion" data-bs-slide-to="1" aria-label="Slide 2">2</button>
+          <button type="button" data-bs-target="#Cuasi-control-paginacion" data-bs-slide-to="2" aria-label="Slide 3">3</button>
+          <button class="carousel-control-prev" id="boton-flecha" type="button" data-bs-target="#Cuasi-control-paginacion" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" id="boton-flecha" type="button" data-bs-target="#Cuasi-control-paginacion" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="text-center my-5">
+      <a href="../index.html"><button type="button" class="btn btn-light fw-semibold">Volver al inicio</button></a>
+      </div>
+    </main>
+      <footer class="bg-dark-subtle text-white pt-4 pb-3">
+        <div class="container">
+          <div class="row text-center text-md-start">
+            <!-- Columna 1: Logo y redes -->
+            <div class="col-12 col-md-12 col-lg-4 mb-3">
+              <img src="../img/logoNavbar.png" alt="Logotipo" width="120" />
+              <a href="./pages/error404.html" class="text-white me-3">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="./pages/error404.html" class="text-white me-3">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="./pages/error404.html" class="text-white">
+                <i class="bi bi-twitter"></i>
+              </a>
+            </div>
+    
+            <!-- Columna 2: Navegación -->
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                          <h5>Navegación</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="./pages/error404.html" class="text-white me-3"
+                    >Inicio</a
+                  >
+                </li>
+                <li>
+                  <a href="./pages/error404.html" class="text-white me-3"
+                    >Películas</a
+                  >
+                </li>
+                <li>
+                  <a href="./pages/error404.html" class="text-white me-3"
+                    >Series</a
+                  >
+                </li>
+                <li>
+                  <a href="./pages/error404.html" class="text-white me-3"
+                    >PMR Plus Global</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Columna 3: Links -->
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+              <h5>Enlaces de Interés</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="./pages/error404.html"
+                    class="text-white text-decoration-underline"
+                  >
+                    Términos y Condiciones
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="./pages/acercaDeNosotros.html"
+                    class="text-white text-decoration-underline"
+                  >
+                    Acerca de Nosotros
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="./pages/contacto.html"
+                    class="text-white text-decoration-underline"
+                  >
+                    Contáctanos
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="./pages/error404.html"
+                    class="text-white text-decoration-underline"
+                  >
+                    Privacidad
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="./pages/error404.html"
+                    class="text-white text-decoration-underline"
+                  >
+                    Privacidad Infantil
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-center mt-2">
+            ©PMR Streaming Todos los Derechos Reservados | 2026
+          </p>
+        </div>
+      </footer>
+      <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
