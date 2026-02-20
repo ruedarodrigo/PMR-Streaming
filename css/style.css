@@ -404,6 +404,70 @@
   font-size: 1.3rem;
 }
 
+/*-----COMIENZAN ESTILOS PARA PAGINAS DE CATEGORIAS-----*/
+
+.carousel-indicators{
+  position: relative;
+  margin-top: 20px;
+}
+
+.carousel-indicators button{
+  width: 40px!important;
+  height: 40px!important;
+  text-indent: 0!important;
+}
+
+#boton-flecha{
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  scale: 0.7;
+  &:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.galeria img{
+  cursor: pointer;
+  transition: all 300ms ease;
+  border: solid 2px rgba(255, 255, 255, 0);
+  &:hover{
+    transform: scale(1.1);
+    border: solid 2px rgb(255, 255, 255);
+  }
+}
+
+.form-select{
+  width: 200px!important;
+}
+
+@media (width >= 768px){
+  .carousel-control-next {
+    right: 100px;
+}
+  .carousel-control-prev{
+    left: 100px;
+  }
+}
+
+@media (width > 992px){
+  .carousel-control-next {
+    right: 200px;
+}
+  .carousel-control-prev{
+    left: 200px;
+  }
+}
+
+@media (width > 1400px){
+  .carousel-control-next {
+    right: 300px;
+}
+  .carousel-control-prev{
+    left: 300px;
+  }
+}
+
+
 
 
 
