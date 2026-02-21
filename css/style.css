@@ -417,12 +417,12 @@
   text-indent: 0!important;
 }
 
-#boton-flecha{
-  background-color: rgba(0, 0, 0, 0);
+.boton-flecha{
+  background-color: rgba(0, 0, 0, 0)!important;
   border-radius: 50%;
   scale: 0.7;
   &:hover{
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6)!important;
   }
 }
 
@@ -441,28 +441,31 @@
 }
 
 @media (width >= 768px){
-  .carousel-control-next {
+  .btn-next {
     right: 100px;
 }
-  .carousel-control-prev{
+  .btn-prev{
     left: 100px;
   }
 }
 
 @media (width > 992px){
-  .carousel-control-next {
+  .btn-next {
     right: 200px;
 }
-  .carousel-control-prev{
+  .btn-prev{
     left: 200px;
+  }
+  .lg-h3{
+    font-size: 28px;
   }
 }
 
 @media (width > 1400px){
-  .carousel-control-next {
+  .btn-next {
     right: 300px;
 }
-  .carousel-control-prev{
+ .btn-prev{
     left: 300px;
   }
 }

@@ -109,7 +109,8 @@
         </nav>    
     </header>
     <main class="container">
-      <h3 class="text-light text-center mt-4">Conoce nuestra colección de Ciencia Ficcion</h3>
+      <div class="d-md-flex align-items-end justify-content-between my-4">
+      <h4 class="text-light text-center mt-4 ps-1 lg-h3">Conoce nuestra colección de Ciencia Ficcion</h4>
       <div class="d-flex justify-content-end pe-1 mt-3"> <!-- Caja de ordenar por: -->
         <select class="form-select">
           <option selected class="text-center">Ordenar por:</option>
@@ -118,6 +119,7 @@
           <option value="3">A-Z</option>
           <option value="3">Z-A</option>
         </select>
+      </div>
       </div>
       <div id="Cuasi-control-paginacion" class="carousel slide carousel-fade mt-2"> <!-- Carousel que simula control de paginacion -->
         <div class="carousel-inner">
@@ -192,11 +194,11 @@
           <button type="button" data-bs-target="#Cuasi-control-paginacion" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">1</button>
           <button type="button" data-bs-target="#Cuasi-control-paginacion" data-bs-slide-to="1" aria-label="Slide 2">2</button>
           <button type="button" data-bs-target="#Cuasi-control-paginacion" data-bs-slide-to="2" aria-label="Slide 3">3</button>
-          <button class="carousel-control-prev" id="boton-flecha" type="button" data-bs-target="#Cuasi-control-paginacion" data-bs-slide="prev">
+          <button class="carousel-control-prev boton-flecha btn-prev" type="button" data-bs-target="#Cuasi-control-paginacion" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" id="boton-flecha" type="button" data-bs-target="#Cuasi-control-paginacion" data-bs-slide="next">
+          <button class="carousel-control-next boton-flecha btn-next" type="button" data-bs-target="#Cuasi-control-paginacion" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
