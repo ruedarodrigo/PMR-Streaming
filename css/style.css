@@ -480,6 +480,15 @@
   object-fit: cover;
 }
 
+/* BOTON SONIDO VIDEO */
+.btn-sonido{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+}
+
+
 .serie-overlay{
   position: absolute;
   top: 0;
@@ -520,45 +529,53 @@
   color: #aaa;
 }
 
-.serie-seccion-titular{
-  font-size: 1.8rem;
-  margin-bottom: 20px;
+.card-body{
+  height: 80px;
 }
 
-.serie-seccion-card{
+.card-capitulo{
+  width: 140px;     /* ancho fijo */
+  height: 180px;    /* alto fijo */
   background-color: #1a1a1a;
   border-radius: 10px;
   overflow: hidden;
-  transition: transform 0.3s;
 }
 
-.serie-capitulo-card:hover{
+.card-capitulo img{
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* evita que se deformen */
+}
+
+.card-capitulo:hover{
   transform: scale(1.05);
 }
 
-.serie-capitulo-info{
-  padding: 10px;
+.card a{
+  text-decoration: none;
+  color: white;
 }
 
-.serie-capitulo-titulo{
-  font-size: 0.9rem;
+.card a:hover{
+  color: white;
 }
 
-.serie-capitulo-duracion{
-  font-size: 0.8rem;
-  color: #aaa;
+.carousel .col-2{
+  flex: 0 0 auto;
+  width: 175px;
 }
 
-/*tarjetas series*/
-
-.serie-card{
-  border-radius: 10px;
-  transition: transform 0.3s;
-  cursor: pointer;
+.carousel-control-prev,
+.carousel-control-next{
+  width: 4%;
 }
 
-.serie-card:hover{
-  transform: scale(1.05);
+.carousel-control-prev{
+  left: -40px;
+}
+
+.carousel-control-next{
+  right: -40px;
 }
 
 .carousel-control-prev-icon,
@@ -566,7 +583,18 @@
   filter: invert(1);
 }
 
+.carousel .row{
+  margin: 0;
+}
+
 /*Responsive*/
+@media (max-width: 576px){
+  .col-6{
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
 @media (max-width: 768px){
 .serie-principal{
   height: 50vh;
