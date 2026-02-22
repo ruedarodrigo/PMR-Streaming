@@ -473,8 +473,63 @@
 }
 
 
+/*Subscripción*/
 
+.sub-body {
+  background-color: #1a1d20;
+  color: white;
+}
 
+.sub-card {
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.sub-card:hover {
+  transform: scale(1.03);
+  transition: 0.3s ease;
+}
+
+.sub-titulo {
+  font-family: 'Buchanan', sans-serif;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.705);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.sub-footer {
+  background-color: #1a1d20;
+}
+
+/*Opcional*/
+.sub-fondo {
+  position: relative;
+  background-image: url('../img/backgroundSub.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+/* Overlay oscuro */
+.sub-fondo:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(1px);
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+/* Asegura que el contenido quede arriba */
+.sub-fondo .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* ----Finaliza pagina Suscripcion */
 
 
 
