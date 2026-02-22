@@ -20,98 +20,30 @@
     <link rel="stylesheet" href="../css/style.css" />
     <title>PMR Plus</title>
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="container-fluid">
-
+          <div class="container-fluid">
                 <!-- Logo -->
-                <a class="navbar-brand fw-bold d-flex alingn-items-center" href="./index.html">
+                <a class="navbar-brand fw-bold d-flex alingn-items-center" href="../index.html">
                     <img src="../img/logoNavbar.png" alt="PMG logo"  class="logo-nav">
                   </a>
-                  
-                  <!-- hamburguesa -->
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  
-                  <!-- Contenido del navbar -->
-                  <div class="collapse navbar-collapse" id="navbarContenido">
-                    
-                    <!-- Links -->
-                    <ul class="navbar-nav  me-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item"> 
-                      <a class="nav-link active" href="../index.html">Inicio</a>
-                    </li>
-                    <!--Categorias desplegable-->
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                        Categorias
-                      </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                          <li>
-                            <a class="dropdown-item" href="./categorias.html">Ciencia Ficcion</a>
-                          </li>
-                          <li>
-                            <a class=" dropdown-item" href="./categorias2.html">Infantiles</a>
-                          </li>
-                          <li>
-                            <a class=" dropdown-item" href="./error404.html">Terror</a>
-                          </li>
-                          <li>
-                            <a class=" dropdown-item" href="./error404.html">Accion</a>
-                          </li>
-                          <li>
-                            <a class=" dropdown-item" href="./error404.html">Comedia</a>
-                          </li>
-                          <li>
-                            <a class=" dropdown-item" href="./error404.html">Documentales</a>
-                          </li>
-                          <li>
-                            <a class=" dropdown-item" href="./error404.html">Policiales</a>
-                          </li>
-                          <li>
-                            <a class=" dropdown-item" href="./error404.html">Anime</a>
-                          </li>
-                          <li>
-                            <a class=" dropdown-item" href="./error404.html">Doramas</a>
-                          </li>
-                        </ul>
-                      </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="./error404.html">Series</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="./error404.html">Películas</a>
-                        </li>
-                      
-                    </ul>
-
-                    <!-- Buscador -->
-                    <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-3">
-                      <form class="d-flex">
-                        <input class="form-control me-2 buscador" type="search" placeholder="Buscar...">
-                        <button class="btn btn-outline-light" type="submit">
-                          <i class="bi bi-search"></i>
-                        </button>
-                      </form>
-                      
-                      <div class="d-flex align-items-center gap-3 ">
-                        <!-- login -->
-                        <a href="./login.html" class="login-icon ">
-                          <i class="bi bi-person-circle"></i>
-                        </a>
-                    <!--suscripcion-->
-                        <a href="./suscripcion.html" class="btn btn-moderno">Suscribirse</a>
-                      </div>
-                    </div>
-                
-              </div>
-        </nav>
-        
+          </div>
+        </nav>    
     </header>
-    <main>
-      
+    <main class="d-flex flex-grow-1 justify-content-center align-items-center">
+      <form class="w-25 border rounded-5 p-4">
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required maxlength="100">
+        </div>
+        <div class="mb-3">
+          <label for="Contraseña" class="form-label">Clave</label>
+          <input type="password" class="form-control" id="Contraseña" placeholder="ingresa tu clave" required maxlength="50">
+        </div>
+        <a href="">olvistaste tu contraseña?</a>
+        <a href="">No tengo cuenta</a>
+      </form>
     </main>
     
 <script src="../js/bootstrap.bundle.min.js"></script>
