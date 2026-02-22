@@ -482,6 +482,7 @@
 
 .sub-card {
   border-radius: 12px;
+  cursor: pointer;
 }
 
 .sub-card:hover {
