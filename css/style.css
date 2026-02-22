@@ -473,6 +473,11 @@
 }
 
 /**Pagina detalle serie/ pelicula**/
+.detalle-serie .carousel .col-2{
+  flex: 0 0 auto;
+  width: 50px;
+}
+
 .serie-principal{
   height: 70vh;
   position: relative;
@@ -563,11 +568,6 @@
   color: white;
 }
 
-.carousel .col-2{
-  flex: 0 0 auto;
-  width: 175px;
-}
-
 .btn-carousel{
   width: 50px;
   height: 50px;
@@ -581,11 +581,6 @@
 
 .carousel-control-next.btn-carousel{
   right: -40px;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon{
-  filter: invert(1);
 }
 
 .carousel .row{
@@ -607,6 +602,16 @@
 .serie-titulo{
   font-size: 2rem;
 }
+
+.detalle-serie .carousel .col-2{
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 992px){
+  .detalle-serie .carousel .col-2{
+    width:16%;
+  }
 }
 
 /*Subscripción*/
