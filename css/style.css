@@ -540,7 +540,7 @@
 
 
 .card img{
-  width: 100%;
+  width: 100%; /* para que ocupe todo el ancho de la card */
   height: 200px;
   object-fit: cover;
 }
