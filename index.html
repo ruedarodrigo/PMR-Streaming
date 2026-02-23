@@ -1,20 +1,676 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" data-bs-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mirá las mejores películas y series en un solo lugar. Con PMR pochocleá sin limites ni interrupciones. Contenido actualizado nacional e internacional.">
-    <meta name="author" content="Maira Galván, Patricio Moyano, Rodrigo Rueda">
-    <link rel="shortcut icon" href="./img/favic.jpeg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mirá las mejores películas y series en un solo lugar. Con PMR pochocleá sin limites ni interrupciones. Contenido actualizado nacional e internacional."
+    />
+    <meta
+      name="author"
+      content="Maira Galván, Patricio Moyano, Rodrigo Rueda"
+    />
+    <link rel="shortcut icon" href="./img/favic.jpeg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>PMR Plus</title>
-</head>
+  </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="./js/bootstrap.min.js"></script>
-</body>
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container-fluid">
+
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold d-flex alingn-items-center" href="./index.html">
+                    <img src="./img/logoNavbar.png" alt="PMG logo"  class="logo-nav">
+                  </a>
+                  
+                  <!-- hamburguesa -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+                  <!-- Contenido del navbar -->
+                  <div class="collapse navbar-collapse" id="navbarContenido">
+                    
+                    <!-- Links -->
+                    <ul class="navbar-nav  me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item"> 
+                      <a class="nav-link active" href="./index.html">Inicio</a>
+                    </li>
+                    <!--Categorias desplegable-->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Categorias
+                      </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li>
+                            <a class="dropdown-item" href="./pages/categorias.html">Ciencia Ficcion</a>
+                          </li>
+                          <li>
+                            <a class=" dropdown-item" href="./pages/categorias2.html">Infantiles</a>
+                          </li>
+                          <li>
+                            <a class=" dropdown-item" href="./pages/error404.html">Terror</a>
+                          </li>
+                          <li>
+                            <a class=" dropdown-item" href="./pages/error404.html">Accion</a>
+                          </li>
+                          <li>
+                            <a class=" dropdown-item" href="./pages/error404.html">Comedia</a>
+                          </li>
+                          <li>
+                            <a class=" dropdown-item" href="./pages/error404.html">Documentales</a>
+                          </li>
+                          <li>
+                            <a class=" dropdown-item" href="./pages/error404.html">Policiales</a>
+                          </li>
+                          <li>
+                            <a class=" dropdown-item" href="./pages/error404.html">Anime</a>
+                          </li>
+                          <li>
+                            <a class=" dropdown-item" href="./pages/error404.html">Doramas</a>
+                          </li>
+                        </ul>
+                      </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./pages/detalleSerie.html">Series</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./pages/detallePelicula.html">Películas</a>
+                        </li>
+                      
+                    </ul>
+
+                    <!-- Buscador -->
+                    <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-3">
+                      <form class="d-flex">
+                        <input class="form-control me-2 buscador" type="search" placeholder="Buscar...">
+                        <button class="btn btn-outline-light" type="submit">
+                          <i class="bi bi-search"></i>
+                        </button>
+                      </form>
+                      
+                      <div class="d-flex align-items-center gap-3 ">
+                        <!-- login -->
+                        <a href="./pages/login.html" class="login-icon ">
+                          <i class="bi bi-person-circle"></i>
+                        </a>
+                    <!--suscripcion-->
+                        <a href="./pages/suscripcion.html" class="btn btn-moderno">Suscribirse</a>
+                      </div>
+                    </div>
+                
+              </div>
+        </nav>
+        
+    </header>
+    <main>
+      <!-- Banner principal -->
+       <section class="position-relative">
+         <div class="position-relative bg-img">
+           <div class="cont-edad">
+            <div class="bandita"></div>
+            <div class="edad px-md-4">
+              <h6 class="mb-0">13 <i class="bi bi-plus"></i></h6>
+            </div>
+          </div>
+        </div>
+        <div class="contenido container p-3">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-12">
+              <h1 class="text-light">S U P E R M A N</h1>
+              <h6 class="d-inline-block me-3">2025</h6>
+              <h6 class="d-inline-block me-3">ACCIÓN</h6>
+              <h6 class="d-inline-block">FANTASÍA Y CIENCIA FICCIÓN</h6>
+              <button type="button" class="btn btn-grad fw-bold my-4">
+                <a
+                href="./pages/suscripcion.html"
+                class="text-decoration-none text-light"
+                >SUSCRIBIRME A PMR</a
+                >
+              </button>
+            </div>
+            <div class="col-12 col-md-6 col-lg-12">
+              <p class="text-light fw-semibold pt-2 pt-md-3 pt-lg-2">
+                <strong>Superman:</strong> es un reinicio del héroe dirigido por
+                James Gunn que muestra a Clark kent intentando equilibrar su
+                herencia kryptoniana con sus valores humanos, mientras el mundo
+                pone en duda su papel como protector.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Seccion de sugerencias -->
+      <section class="bg-dark-subtle py-5"> 
+        <!-- Series sugeridas -->
+        <article>
+          <h4 class="pb-lg-3 text-center">Nuestras series sugeridas🧐</h4>
+          <article class="carousel-lg pb-5 px-3"> <!-- Carousel para disp large -->
+        <div id="seriesSugeridas" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <div class="card">
+              <a href="./pages/detalleSerie.html"><img class="img-fluid" src="./img/series/Sci-fi-s/dark.jpg" alt="Dark"></a>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/series/Gambito.jpg" alt="Gambito de dama">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/series/Sci-fi-s/BlackMirror.jpg" alt="BlackMirror">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/series/Sci-fi-s/sense8.jpg" alt="Sense8">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/series/Patron.webp" alt="El patron del mal">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/series/Sci-fi-s/Omnisciente.jpg" alt="Omnisciente">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/series/Sci-fi-s/Archivo81.jpg" alt="Archivo81">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/series/Sci-fi-s/ElmañanaYyo.jpg" alt="ElmañanayYo">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/series/Eternauta.webp" alt="El Eternauta">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/series/Sci-fi-s/ElmitodeSisifo.jpg" alt="ElmitodeSisifo">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/series/BreakingBad.webp" alt="Breaking Bad">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/series/Sci-fi-s/Altered.jpg" alt="Altered">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/series/Sci-fi-s/Lejos.jpg" alt="Lejos">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/series/PeakyBlinders.jpg" alt="Peaky Blinders">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/series/Sci-fi-s/LosDetectivesDifuntos.jpg" alt="LosDetectivesDifuntos">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/series/Sci-fi-s/Lucifer.jpg" alt="Lucifer">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/series/Stranger.webp" alt="Stranger Things">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/series/Sci-fi-s/Manifiesto.jpg" alt="Manifiesto">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev justify-content-start" type="button" data-bs-target="#seriesSugeridas" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon bg-dark-subtle" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next justify-content-end" type="button" data-bs-target="#seriesSugeridas" data-bs-slide="next">
+    <span class="carousel-control-next-icon bg-dark-subtle" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+          </article>
+          <article class="container carousel-md pb-4"> <!-- Carousel para disp sm y md-->
+          <div class="contenedor">
+            <div class="card">
+              <a href="./pages/detalleSerie.html"><img class="img-fluid" src="./img/series/Sci-fi-s/dark.jpg" alt="dark"></a>
+            </div>
+            <div class="card">
+              <img src="./img/series/Gambito.jpg" alt="Gambito de dama">
+            </div>
+            <div class="card">
+              <img src="./img/series/Sci-fi-s/BlackMirror.jpg" alt="BlackMirror">
+            </div>
+            <div class="card">
+              <img src="./img/series/Sci-fi-s/sense8.jpg" alt="Sense8">
+            </div>
+            <div class="card">
+              <img src="./img/series/Patron.webp" alt="Patron del mal">
+            </div>
+            <div class="card">
+              <img src="./img/series/Sci-fi-s/Omnisciente.jpg" alt="Omnisciente">
+            </div>
+            <div class="card">
+              <img src="./img/series/Sci-fi-s/Archivo81.jpg" alt="archivo81">
+            </div>
+            <div class="card">
+              <img src="./img/series/Sci-fi-s/ElmañanaYyo.jpg" alt="ElmañanaYyo">
+            </div>
+            <div class="card">
+              <img src="./img/series/Eternauta.webp" alt="El Eternauta">
+            </div>
+            <div class="card">
+              <img src="./img/series/Sci-fi-s/Merlina.jpg" alt="Merlina">
+            </div>
+            <div class="card">
+              <img src="./img/series/BreakingBad.webp" alt="BreakingBad">
+            </div>
+            <div class="card">
+              <img src="./img/series/Sci-fi-s/ElmitodeSisifo.jpg" alt="ElmitodeSisifo">
+            </div>
+            <div class="card">
+              <img src="./img/series/PeakyBlinders.jpg" alt="PeakyBlinders">
+            </div>
+            <div class="card">
+              <img src="./img/series/Stranger.webp" alt="StrangerThings">
+            </div>
+            <div class="card">
+              <img src="./img/series/Sci-fi-s/TheOA.jpg" alt="TheOA">
+            </div>
+            <div class="card">
+              <img src="./img/series/Sci-fi-s/Ragnarok.jpg" alt="Ragnarok">
+            </div>
+          </div>
+          </article>
+        </article>
+        <!-- Peliculas sugeridas -->
+        <article>
+        <h4 class=" pb-lg-3 text-center">Pelis para un pochocleo intenso🍿</h4>
+        <article class="carousel-lg pb-5 px-3"> <!-- Carousel para disp large -->
+        <div id="pelisSugeridas" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <div class="card">
+              <img src="./img/pelis/oppenheimer.webp" alt="Oppenheimer">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <a href="./pages/detallePelicula.html">
+                <img  class="img-fluid" src="./img/pelis/Sci-fi-pel/Readyplayer.webp" alt="Readyplayer">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/pelis/Unidos.webp" alt="Unidos">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/pelis/EjercitoLadrones.jpg" alt="El ejercito de los ladrones">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/pelis/Sci-fi-pel/avatar-fyc.jpg" alt="Avatar,fuego y cenizas">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/pelis/PijamaRayas.webp" alt="El niño del pijama a rayas">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/pelis/CaballerodeLaNoche.webp" alt="Caballero de la noche">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/pelis/EntrelaVidaylaMuerte.jpg" alt="Entre la vida y la muerte">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/pelis/Minions.webp" alt="Minions">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/pelis/caminoDelagua.webp" alt="Avatar2">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/pelis/Madagascar.webp" alt="Madagascar">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/pelis/SecretOjos.webp" alt="El secreto de su ojos">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/pelis/SuperMario.webp" alt="Super Mario">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/pelis/Sci-fi-pel/Sinsajo2.webp" alt="Sinsajo2">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/pelis/TrendelosNiños.jpg" alt="El tren de los niños">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/pelis/LosIlusionistas.webp" alt="Los ilusionistas">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/pelis/Sci-fi-pel/LigadelaJusticia.avif" alt="La liga de la justicia">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="./img/pelis/LoveStory.webp" alt="Love Story">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev justify-content-start" type="button" data-bs-target="#pelisSugeridas" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon bg-dark-subtle" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next justify-content-end" type="button" data-bs-target="#pelisSugeridas" data-bs-slide="next">
+    <span class="carousel-control-next-icon bg-dark-subtle" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        </article>
+        <article class="container carousel-md"> <!-- Carousel para disp sm y md-->
+          <div class="contenedor">
+            <div class="card">
+              <img src="./img/pelis/oppenheimer.webp" alt="Oppenheimer">
+            </div>
+            <div class="card">
+              <img src="./img/pelis/Sci-fi-pel/Readyplayer.webp" alt="Readyplayer">
+            </div>
+            <div class="card">
+              <img src="./img/pelis/Madagascar.webp" alt="Madagascar">
+            </div>
+            <div class="card">
+              <img src="./img/pelis/EjercitoLadrones.jpg" alt="Ejercito de Ladrones">
+            </div>
+            <div class="card">
+              <img src="./img/pelis/Unidos.webp" alt="Unidos">
+            </div>
+            <div class="card">
+              <img src="./img/pelis/PijamaRayas.webp" alt="El niño con el pijama a rayas">
+            </div>
+            <div class="card">
+              <img src="./img/pelis/Minions.webp" alt="Minions">
+            </div>
+            <div class="card">
+              <img src="./img/pelis/EntrelaVidaylaMuerte.jpg" alt="Entre la vida y la muerte">
+            </div>
+            <div class="card">
+              <img src="./img/pelis/caminoDelagua.webp" alt="caminoDelagua">
+            </div>
+            <div class="card">
+              <img src="./img/pelis/SecretOjos.webp" alt="El secreto de sus ojos">
+            </div>
+            <div class="card">
+              <img src="./img/pelis/CaballerodeLaNoche.webp" alt="CaballerodeLaNoche">
+            </div>
+            <div class="card">
+              <img src="./img/pelis/SuperMario.webp" alt="SuperMario">
+            </div>
+            <div class="card">
+              <img src="./img/pelis/Sci-fi-pel/Sinsajo2.webp" alt="Sinsajo2">
+            </div>
+            <div class="card">
+              <img src="./img/pelis/LoveStory.webp" alt="LoveStory">
+            </div>
+            <div class="card">
+              <img src="./img/pelis/LosIlusionistas.webp" alt="Los ilusionistas">
+            </div>
+            <div class="card">
+              <img src="./img/pelis/TrendelosNiños.jpg" alt="El tren de los niños">
+            </div>
+          </div>
+        </article>
+        </article>
+      </section>
+      <!--Banner de promocion/suscricion-->
+      <section class="banner-suscripcion">
+        <img src="./img/fondo-banner.webp" alt="El Eternauta" class="banner-img">
+        <div class="banner-contenido container text-center">
+            <span class="oferta">🔥 50% OFF por tiempo limitado</span>
+            <h2 class="titulo-banner">El mejor entretenimiento en un solo lugar</h2>
+            <p class="sub-banner">Series exclusivas, estrenos cada semana con la mejor calidad y sin anuncion. Cancelá cuando quieras</p>
+            <div class="botones-banner">
+                <a href="./pages/suscripcion.html" class="btn btn-primary">Suscribirme</a><!--va a la pagina en feneral-->
+                <a href="./pages/suscripcion.html#planes" class="btn btn-secondary">Ver planes</a> <!--debo poner id="planes" en la pagina suscripcion va a lugar especifico-->
+            </div>
+        </div>
+      </section>
+<section class="container my-5">
+  
+  <h2 class="text-center mb-4">Categorías Sugeridas</h2>
+
+  <div class="row g-4">
+
+    <!-- Categoría 1 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-dark border-0 shadow categoria-card">
+        <img src="./img/accion.jpg" class="card-img" alt="Acción">
+        <div class="card-img-overlay d-flex align-items-end">
+          <h5 class="card-title titulo-categoria">Acción</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Categoría 2 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-dark text-danger border-0 shadow categoria-card">
+        <a href="./pages/categorias.html"><img src="./img/ciencia ficcion.jpg" class="card-img" alt="cienciaFiccion">
+        <div class="card-img-overlay d-flex align-items-end">
+          <h5 class="card-title titulo-categoria">Ciencia Ficción</h5>
+        </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Categoría 3 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-dark text-white border-0 shadow categoria-card">
+        <img src="./img/terror.jpg" class="card-img" alt="Drama">
+        <div class="card-img-overlay d-flex align-items-end">
+          <h5 class="card-title titulo-categoria">Terror</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Categoría 4 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card bg-dark text-white border-0 shadow categoria-card">
+        <a href="./pages/categorias2"><img src="./img/infantiles.jpg" class="card-img" alt="Infantil">
+        <div class="card-img-overlay d-flex align-items-end">
+          <h5 class="card-title titulo-categoria">Infantil</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer class="bg-dark-subtle text-white pt-4 pb-3">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <!-- Columna 1: Logo y redes -->
+                <div class="col-12 col-md-12 col-lg-4 mb-3">
+                    <img src="./img/logoNavbar.png" alt="Logotipo" width="120" />
+                    <a href="./pages/error404.html" class="text-white me-3">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="./pages/error404.html" class="text-white me-3">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="./pages/error404.html" class="text-white">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </div>
+                
+                <!-- Columna 2: Navegación -->
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <h5>Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="./index.html" class="text-white me-3"
+                            >Inicio</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./pages/categorias.html" class="text-white me-3"
+                            >Categorias</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./pages/detallePelicula.html" class="text-white me-3"
+                            >Películas</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./pages/detalleSerie.html" class="text-white me-3"
+                            >Series</a
+                            >
+                        </li>
+                <li>
+                    <a href="./pages/error404.html" class="text-white me-3"
+                    >PMR Plus Global</a
+                    >
+                </li>
+            </ul>
+        </div>
+        <!-- Columna 3: Links -->
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <h5>Enlaces de Interés</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <a
+                    href="./pages/error404.html"
+                    class="text-white text-decoration-underline"
+                    >
+                    Términos y Condiciones
+                </a>
+            </li>
+            <li>
+                <a
+                href="./pages/acercaDeNosotros.html"
+                class="text-white text-decoration-underline"
+                >
+                Acerca de Nosotros
+            </a>
+                </li>
+                <li>
+                    <a
+                    href="./pages/contacto.html"
+                    class="text-white text-decoration-underline"
+                    >
+                    Contáctanos
+                </a>
+            </li>
+            <li>
+                <a
+                href="./pages/error404.html"
+                class="text-white text-decoration-underline"
+                >
+                Privacidad
+            </a>
+        </li>
+        <li>
+            <a
+            href="./pages/error404.html"
+            class="text-white text-decoration-underline"
+            >
+            Privacidad Infantil
+        </a>
+    </li>
+</ul>
+</div>
+</div>
+<p class="text-center mt-2">
+    ©PMR Streaming Todos los Derechos Reservados | 2026
+</p>
+</div>
+</footer>
+      <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
