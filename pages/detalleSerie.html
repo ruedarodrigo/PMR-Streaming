@@ -26,7 +26,7 @@
       <div class="container-fluid">
 
                 <!-- Logo -->
-                <a class="navbar-brand fw-bold d-flex alingn-items-center" href="./index.html">
+                <a class="navbar-brand fw-bold d-flex alingn-items-center" href="../index.html">
                     <img src="../img/logoNavbar.png" alt="PMG logo"  class="logo-nav">
                   </a>
                   
@@ -110,22 +110,738 @@
         </nav>
         
     </header>
-    <main>
-      
+    <main class="detalle-serie">
+        <!--Video/imagen-->
+        <section class="serie-principal">
+            <video autoplay muted loop playsinline class="serie-video">
+                <source src="../video/Trailer.mp4" type="video/mp4">
+                <source src="../video/Trailer.webm" type="video/webm">
+            </video>
+
+            <div class="serie-overlay"></div>
+
+            <button class="btn btn-light btn-sonido" onclick="toggleSonido()">
+            🔊
+            </button>
+
+            <div class="serie-info">
+              <h1 class="serie-titulo">Dark</h1>
+
+              <p class="serie-descripcion">
+                  Cuando dos niños desaparecen en el pequeño pueblo alemán de Winden,
+                  se revela un misterio que conecta cuatro familias a lo largo del tiempo.
+              </p>
+
+              <div class="serie-datos">
+                <span>Año: 2017</span>
+                <span>1 Temporada</span>
+                <span>+16</span>
+                <span>4K</span>
+              </div>
+
+              <button class="btn btn-moderno mt-3">Ver ahora</button>
+            </div>
+        </section>
+
+        <!--Capitulos-->
+        <section class="container mt-5"> 
+          <article class="container">
+            <h3>Temporada 1</h3>
+              <h4 class="titulo-seccion pb-lg-3"> Capitulos</h4>
+                <article class="carousel-lg pb-5"> <!-- Carousel para disp large -->
+                  <div id="carouselCapitulos" class="carousel slide">
+                    <div class="carousel-inner">
+                      <!--Capitulos-->
+                      <div class="carousel-item active">
+                        <div class="container">
+                          <div class="row g-3 justify-content-center">
+                            <div class="col-2">
+                              <div class="card card-capitulo">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/serie-dark.jpg" alt="capitulo 1" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>Capitulo 1</h6>
+                                    <p>56 min</p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="col-2">
+                              <div class="card card-capitulo">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/serie-dark.jpg" alt="capitulo 2" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>Capitulo 2</h6>
+                                    <p>50 min</p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="col-2">
+                              <div class="card card-capitulo">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/serie-dark.jpg" alt="capitulo 3" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>Capitulo 3</h6>
+                                    <p>51 min</p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="card card-capitulo">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/serie-dark.jpg" alt="capitulo 4" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>Capitulo 4</h6>
+                                    <p>49 min</p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="card card-capitulo">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/serie-dark.jpg" alt="capitulo 5" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>Capitulo 5</h6>
+                                    <p>56 min</p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                            <div class="card card-capitulo">
+                              <a href="../pages/error404.html">
+                                <img src="../img/serie-dark.jpg" alt="Capitulo 6" class="card-img-top">
+                                <div class="card-body p-2">
+                                  <h6>Capitulo 6</h6>
+                                  <p>52 min</p>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    <!--Capitulos 5+-->
+                    <div class="carousel-item">
+                      <div class="row g-3 justify-content-center">
+                        <div class="col-2">
+                          <div class="card card-capitulo">
+                            <a href="../pages/error404.html">
+                              <img src="../img/serie-dark.jpg" alt="Capitulo 7" class="card-img-top">
+                              <div class="card-body p-2">
+                                <h6>Capitulo 7</h6>
+                                <p>60 min</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <div class="card card-capitulo">
+                            <a href="../pages/error404.html">
+                              <img src="../img/serie-dark.jpg" alt="Capitulo 8" class="card-img-top">
+                              <div class="card-body p-2">
+                                <h6>Capitulo 8</h6>
+                                <p>57 min</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <div class="card card-capitulo">
+                            <a href="../pages/error404.html">
+                              <img src="../img/serie-dark.jpg" alt="Capitulo 9" class="card-img-top">
+                              <div class="card-body p-2">
+                                <h6>Capitulo 9</h6>
+                                <p>59 min</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <div class="card card-capitulo">
+                            <img src="../img/serie-dark.jpg" alt="Capitulo 10" class="card-img-top">
+                            <div class="card-body p-2">
+                              <h6>Capitulo 10</h6>
+                              <p>50 min</p>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    </div>
+
+                    <!--botones-->
+                    <button class="carousel-control-prev btn-carousel" type="button" data-bs-target="#carouselCapitulos" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon icono-carousel"></span>
+                    </button>
+
+                    <button class="carousel-control-next btn-carousel" type="button" data-bs-target="#carouselCapitulos" data-bs-slide="next">
+                      <span class="carousel-control-next-icon icono-carousel"></span>
+                    </button>
+                  </div>
+                </article>
+                <article class="carousel-md"> <!-- Carousel para disp sm y md-->
+          <div class="contenedor">
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/serie-dark.jpg" alt="Capitulo 1">
+                <div class="card-body p-2">
+                    <h6>Capitulo 1</h6>
+                    <p>56 min</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/serie-dark.jpg" alt="Capitulo 2">
+                <div class="card-body p-2">
+                    <h6>Capitulo 2</h6>
+                    <p>50 min</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/serie-dark.jpg" alt="Capitulo 3">
+                <div class="card-body p-2">
+                    <h6>Capitulo 3</h6>
+                    <p>51 min</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/serie-dark.jpg" alt="Capitulo 4">
+                <div class="card-body p-2">
+                    <h6>Capitulo 4</h6>
+                    <p>49 min</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/serie-dark.jpg" alt="Capitulo 5">
+                <div class="card-body p-2">
+                    <h6>Capitulo 5</h6>
+                    <p>56 min</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/serie-dark.jpg" alt="Capitulo 6">
+                <div class="card-body p-2">
+                    <h6>Capitulo 6</h6>
+                    <p>52 min</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/serie-dark.jpg" alt="Capitulo 7">
+                <div class="card-body p-2">
+                    <h6>Capitulo 7</h6>
+                    <p>60 min</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/serie-dark.jpg" alt="Capitulo 8">
+                <div class="card-body p-2">
+                    <h6>Capitulo 8</h6>
+                    <p>57 min</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/serie-dark.jpg" alt="Capitulo 9">
+                <div class="card-body p-2">
+                    <h6>Capitulo 9</h6>
+                    <p>59 min</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/serie-dark.jpg" alt="Capitulo 10">
+                <div class="card-body p-2">
+                    <h6>Capitulo 10</h6>
+                    <p>50 min</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </article>
+          </article>
+        </section>
+
+        <!--Series en relacionadas-->
+        <section class="container mt-5"> 
+          <article class="container">
+              <h4 class="titulo-seccion pb-lg-3"> Series Relacionadas</h4>
+                <article class="carousel-lg pb-5"> <!-- Carousel para disp large -->
+                  <div id="carouselRelacionadas" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="container">
+                          <div class="row g-3 justify-content-center">
+                            <div class="col-2">
+                              <div class="card card-capitulo">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/s-relacionadas/12monos.jpg" alt="Los 12 monos" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>Los 12 monos</h6>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="col-2">
+                              <div class="card card-capitulo">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/s-relacionadas/1899.jpg" alt="1899" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>1899</h6>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="col-2">
+                              <div class="card card-capitulo">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/s-relacionadas/3%.jpg" alt="El 3%" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>El 3%</h6>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="card card-capitulo">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/s-relacionadas/3bodyproblem.jpg" alt="3 body problem" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>3 body problem</h6>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="card card-capitulo">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/s-relacionadas/archivo81.jpg" alt="Archivo 81" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>Archivo 81</h6>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                            <div class="card card-capitulo">
+                              <a href="../pages/error404.html">
+                                <img src="../img/s-relacionadas/llaves.jpg" alt="Puertas y llaves" class="card-img-top">
+                                <div class="card-body p-2">
+                                  <h6>Puertas y llaves</h6>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    <!--Capitulos 5+-->
+                    <div class="carousel-item">
+                      <div class="row g-3 justify-content-center">
+                        <div class="col-2">
+                          <div class="card card-capitulo">
+                            <a href="../pages/error404.html">
+                              <img src="../img/s-relacionadas/OA.jpg" alt="The O.A." class="card-img-top">
+                              <div class="card-body p-2">
+                                <h6>The O.A.</h6>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <div class="card card-capitulo">
+                            <a href="../pages/error404.html">
+                              <img src="../img/s-relacionadas/silo.jpg" alt="El silo" class="card-img-top">
+                              <div class="card-body p-2">
+                                <h6>El silo</h6>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <div class="card card-capitulo">
+                            <a href="../pages/error404.html">
+                              <img src="../img/s-relacionadas/strangerThings.jpg" alt="The Stranger Things" class="card-img-top">
+                              <div class="card-body p-2">
+                                <h6>he Stranger Things</h6>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <div class="card card-capitulo">
+                            <a href="../pages/error404.html">
+                              <img src="../img/s-relacionadas/viajeros.jpg" alt="Los Viajeron" class="card-img-top">
+                              <div class="card-body p-2">
+                                <h6>Los Viajeros</h6>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    </div>
+
+                    <!--botones-->
+                    <button class="carousel-control-prev btn-carousel" type="button" data-bs-target="#carouselRelacionadas" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon icono-carousel"></span>
+                    </button>
+
+                    <button class="carousel-control-next btn-carousel" type="button" data-bs-target="#carouselRelacionadas" data-bs-slide="next">
+                      <span class="carousel-control-next-icon icono-carousel"></span>
+                    </button>
+                  </div>
+                </article>
+                <article class="carousel-md"> <!-- Carousel para disp sm y md-->
+          <div class="contenedor">
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/s-relacionadas/12monos.jpg" alt="Los 12 Monos" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>Los 12 Monos</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/s-relacionadas/1899.jpg" alt="1899" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>1899</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/s-relacionadas/3%.jpg" alt="El 3%" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>El 3%</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/s-relacionadas/3bodyproblem.jpg" alt=" 3 body problem" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>3 body problem</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/s-relacionadas/archivo81.jpg" alt="Archivo 81" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>Archivo 81</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/s-relacionadas/llaves.jpg" alt="LLave y puertas" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>Llave y puertas</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/s-relacionadas/OA.jpg" alt="The O.A." class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>The O.A.</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/s-relacionadas/silo.jpg" alt="El Silo" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>El Silo</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/s-relacionadas/strangerThings.jpg" alt="The Stranger Things" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>The Stranger Things</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/s-relacionadas/viajeros.jpg" alt="Viajeros" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>Viajeros</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </article>
+          </article>
+        </section>
+        
+        <!--Series en estrenos-->
+        <section class="container mt-5"> 
+          <article class="container">
+              <h4 class="titulo-seccion pb-lg-3"> Series en Estreno</h4>
+                <article class="carousel-lg pb-5"> <!-- Carousel para disp large -->
+                  <div id="carouselEstrenos" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="container">
+                          <div class="row g-3 justify-content-center">
+                            <div class="col-2">
+                              <div class="card card-capitulo">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/s-estrenos/goosebumps.jpg" alt="Goosebumps" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>Goosebumps</h6>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="col-2">
+                              <div class="card card-capitulo">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/s-estrenos/laPlataforma.jpg" alt="La Plataforma" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>La Plataforma</h6>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="col-2">
+                              <div class="card card-capitulo">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/s-estrenos/losHombres.jpg" alt="Los Hombres" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>Los Hombres</h6>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="card card-capitulo">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/s-estrenos/MachosAlfas.jpg" alt="Machos Alfas" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>Machos Alfas</h6>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="card card-capitulo">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/s-estrenos/paradise.jpg" alt="Paradise" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>Paradise</h6>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                            <div class="card card-capitulo">
+                              <a href="../pages/error404.html">
+                                <img src="../img/s-estrenos/perfilFalso.jpg" alt="Perfiles Falsos" class="card-img-top">
+                                <div class="card-body p-2">
+                                  <h6>Perfiles Falsos</h6>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    <!--Capitulos 5+-->
+                    <div class="carousel-item">
+                      <div class="row g-3 justify-content-center">
+                        <div class="col-2">
+                          <div class="card card-capitulo">
+                            <a href="../pages/error404.html">
+                              <img src="../img/s-estrenos/severance.jpg" alt="Severance" class="card-img-top">
+                              <div class="card-body p-2">
+                                <h6>Severance</h6>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <div class="card card-capitulo">
+                            <a href="../pages/error404.html">
+                              <img src="../img/s-estrenos/shrinking.jpg" alt="Shrinking" class="card-img-top">
+                              <div class="card-body p-2">
+                                <h6>Shrinking</h6>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <div class="card card-capitulo">
+                            <a href="../pages/error404.html">
+                              <img src="../img/s-estrenos/strangerThings.jpg" alt="The Stranger Things" class="card-img-top">
+                              <div class="card-body p-2">
+                                <h6>he Stranger Things</h6>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <div class="card card-capitulo">
+                            <a href="../pages/error404.html">
+                              <img src="../img/s-estrenos/XO.jpg" alt="The X.O" class="card-img-top">
+                              <div class="card-body p-2">
+                                <h6>The X.O.</h6>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    </div>
+
+                    <!--botones-->
+                    <button class="carousel-control-prev btn-carousel" type="button" data-bs-target="#carouselEstrenos" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon icono-carousel"></span>
+                    </button>
+
+                    <button class="carousel-control-next btn-carousel" type="button" data-bs-target="#carouselEstrenos" data-bs-slide="next">
+                      <span class="carousel-control-next-icon icono-carousel"></span>
+                    </button>
+                  </div>
+                </article>
+                <article class="carousel-md"> <!-- Carousel para disp sm y md-->
+          <div class="contenedor">
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/s-estrenos/goosebumps.jpg" alt="Goosebumps" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>Goosebumps</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/s-estrenos/laPlataforma.jpg" alt="La Plataforma" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>La Plataforma</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/s-estrenos/losHombres.jpg" alt="Los Hombres" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>Los Hombres</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/s-estrenos/MachosAlfas.jpg" alt="Machos Alfas" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>Machos Alfas</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/s-estrenos/paradise.jpg" alt="Paradise" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>Paradise</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/s-estrenos/perfilFalso.jpg" alt="Perfiles Falsos" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>Perfiles Falsos</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/s-estrenos/severance.jpg" alt="Severance" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>Severance</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/s-estrenos/shrinking.jpg" alt="Shrinking" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>Shrinking</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/s-estrenos/strangerThings.jpg" alt="The Stranger Things" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>The Stranger Things</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/s-estrenos/XO.jpg" alt="X.O." class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>X.O</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </article>
+          </article>
+        </section>
+
+
+        
     </main>
     <footer class="bg-dark-subtle text-white pt-4 pb-3">
         <div class="container">
             <div class="row text-center text-md-start">
                 <!-- Columna 1: Logo y redes -->
                 <div class="col-12 col-md-12 col-lg-4 mb-3">
-                    <img src="./img/logoNavbar.png" alt="Logotipo" width="120" />
-                    <a href="./pages/error404.html" class="text-white me-3">
+                    <img src="../img/logoNavbar.png" alt="Logotipo" width="120" />
+                    <a href="../pages/error404.html" class="text-white me-3">
                         <i class="bi bi-facebook"></i>
                     </a>
-                    <a href="./pages/error404.html" class="text-white me-3">
+                    <a href="../pages/error404.html" class="text-white me-3">
                         <i class="bi bi-instagram"></i>
                     </a>
-                    <a href="./pages/error404.html" class="text-white">
+                    <a href="../pages/error404.html" class="text-white">
                         <i class="bi bi-twitter"></i>
                     </a>
                 </div>
