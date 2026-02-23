@@ -672,4 +672,15 @@
 
 /* ----Finaliza pagina Suscripcion */
 
+/* -----COMIENZAN ESTILOS PAGINA LOGIN----- */
 
+.titulo-login{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.bg-login{
+  background: #0D0D0D;
+}
