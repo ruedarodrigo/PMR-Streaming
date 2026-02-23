@@ -472,7 +472,7 @@
   }
 }
 
-/**Pagina detalle serie/ pelicula**/
+/**Pagina detalle serie**/
 .detalle-serie .carousel .col-2{
   flex: 0 0 auto;
   width: 50px;
@@ -610,6 +610,149 @@
 
 @media (min-width: 992px){
   .detalle-serie .carousel .col-2{
+    width:16%;
+  }
+}
+
+/** Pagina detalle pelicula **/
+
+.detalle-peli .carousel .col-2{
+  flex: 0 0 auto;
+  width: 50px;
+}
+
+.peli-principal{
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.peli-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BOTON SONIDO VIDEO */
+.btn-sonido{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+}
+
+
+.peli-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+  to right,
+  rgba(0,0,0,0.9) 25%,
+  rgba(0,0,0,0.4) 60%,
+  rgba(0,0,0,0.1) 100%
+  );
+}
+
+.peli-info{
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  transform: translateY(-50%);
+  max-width: 500px;
+  z-index: 2;
+}
+
+.peli-titulo{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.peli-descripcion{
+  margin-top: 15px;
+  color: #cfcfcf;
+}
+
+.peli-datos{
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  color: #aaa;
+}
+
+.card-pelis{
+  width: 160px;
+  height: 180px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden; /*Para que la imagen no se salga de la card*/
+}
+
+.card-pelis img{
+  width: 100%;
+  height: 100px;
+  object-fit: cover; /*Para que la imagen se ajuste a la card sin deformarse*/
+}
+
+
+
+.card-pelis:hover{
+  transform: scale(1.05);
+}
+
+.card a{
+  text-decoration: none;
+  color: white;
+}
+
+.card a:hover{
+  color: white;
+}
+
+.btn-carousel{
+  width: 50px;
+  height: 50px;
+  top:45%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev.btn-carousel{
+  left: -40px;
+}
+
+.carousel-control-next.btn-carousel{
+  right: -40px;
+}
+
+.carousel .row{
+  margin: 0;
+}
+
+/*Responsive*/
+
+@media (max-width: 768px){
+.peli-principal{
+  height: 50vh;
+}
+
+.peli-info{
+  left: 20px;
+  right: 20px;
+}
+
+.peli-titulo{
+  font-size: 2rem;
+}
+
+.detalle-peli .carousel .col-2{
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 992px){
+  .detalle-peli .carousel .col-2{
     width:16%;
   }
 }
