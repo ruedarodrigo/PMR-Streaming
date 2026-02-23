@@ -481,6 +481,10 @@
 .bg-contacto{
   background: linear-gradient(135deg, #134cbf, #1e8eff); 
   }
+
+.resize-non{
+  resize: none;
+}
   
 /**Pagina detalle serie/ pelicula**/
 /**Pagina detalle serie**/
