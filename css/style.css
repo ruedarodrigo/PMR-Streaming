@@ -688,6 +688,7 @@
   background-color: #1a1a1a;
   border-radius: 10px;
   overflow: hidden; /*Para que la imagen no se salga de la card*/
+  transition: transform 0.3s;
 }
 
 .card-pelis img{
@@ -700,6 +701,10 @@
 
 .card-pelis:hover{
   transform: scale(1.05);
+}
+
+.detalle-peli .carousel .col-2{
+  flex: 0 0 auto;
 }
 
 .card a{
@@ -747,13 +752,13 @@
 }
 
 .detalle-peli .carousel .col-2{
-    width: 33.33%;
+    width: 33%; /*Para que se vean 3 cards en el carousel*/
   }
 }
 
 @media (min-width: 992px){
   .detalle-peli .carousel .col-2{
-    width:16%;
+    width:16%; /*Para que se vean 6 cards en el carousel*/
   }
 }
 
