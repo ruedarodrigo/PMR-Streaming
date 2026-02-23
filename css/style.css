@@ -705,4 +705,42 @@
 
 /* ----Finaliza pagina Suscripcion */
 
+/* QUIENES SOMOS */
+
+.quienes-somos {
+  background-color: #141414;
+}
+
+/* Card */
+.team-card {
+  background-color: #1c1c1c;
+  border: none;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Imagen adaptable */
+.team-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+/* Ajuste para celulares */
+@media (max-width: 576px) {
+  .team-img {
+    height: 250px;
+  }
+
+  .quienes-somos h2 {
+    font-size: 1.6rem;
+  }
+}
+
 
