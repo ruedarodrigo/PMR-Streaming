@@ -472,6 +472,21 @@
   }
 }
 
+/* ---Estilo pagina de contacto--- */
+
+.tema-consulta{
+  width: 100%!important;
+}
+
+.bg-contacto{
+  background: linear-gradient(135deg, #134cbf, #1e8eff); 
+  }
+
+.resize-non{
+  resize: none;
+}
+  
+/**Pagina detalle serie/ pelicula**/
 /**Pagina detalle serie**/
 .detalle-serie .carousel .col-2{
   flex: 0 0 auto;
