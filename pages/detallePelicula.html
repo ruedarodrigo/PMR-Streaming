@@ -26,7 +26,7 @@
       <div class="container-fluid">
 
                 <!-- Logo -->
-                <a class="navbar-brand fw-bold d-flex alingn-items-center" href="./index.html">
+                <a class="navbar-brand fw-bold d-flex alingn-items-center" href="../index.html">
                     <img src="../img/logoNavbar.png" alt="PMG logo"  class="logo-nav">
                   </a>
                   
@@ -79,10 +79,10 @@
                         </ul>
                       </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="./error404.html">Series</a>
+                          <a class="nav-link" href="./detalleSerie.html">Series</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="./error404.html">Películas</a>
+                          <a class="nav-link" href="./detallePelicula.html">Películas</a>
                         </li>
                       
                     </ul>
@@ -110,22 +110,558 @@
         </nav>
         
     </header>
-    <main>
-      
+    <main class="detalle-peli">
+        <!--Video/imagen-->
+        <section class="peli-principal">
+            <video autoplay muted loop playsinline class="peli-video">
+                <source src="../video/readyPlayerOne.webm" type="video/webm">
+            </video>
+
+            <div class="peli-overlay"></div>
+
+            <button class="btn btn-light btn-sonido" onclick="toggleSonido()">
+            🔊
+            </button>
+
+            <div class="peli-info">
+              <h1 class="peli-titulo">Ready Player One</h1>
+
+              <p class="peli-descripcion">
+                  En un futuro cercano, Wade Watts escapa de la dura realidad del mundo real
+                  pasando horas en el OASIS, un universo de realidad virtual. Cuando el creador
+                  del OASIS muere, deja un desafío lleno de pistas que otorga su fortuna y el
+                  control del mundo virtual a quien logre resolverlo.
+              </p>
+
+              <div class="peli-datos">
+                <span>Año: 2018</span>
+                <span>Duración: 2h 10min</span>
+                <span>+13</span>
+                <span>4K</span>
+              </div>
+
+              <button class="btn btn-moderno mt-3">Ver ahora</button>
+            </div>
+        </section>
+
+        <!--pelis-->
+        <section class="container mt-5"> 
+          <article class="container">
+              <h4 class="titulo-seccion pb-lg-3"> Pelis Relacionadas</h4>
+                <article class="carousel-lg pb-5"> <!-- Carousel para disp large -->
+                  <div id="carouselPelis1" class="carousel slide">
+                    <div class="carousel-inner">
+                      <!--Pelis relacionadas-->
+                      <div class="carousel-item active">
+                        <div class="container">
+                          <div class="row g-3 justify-content-center">
+                            <div class="col-2">
+                              <div class="card card-pelis">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/p-relacionadas/alFilodelMañana.jpg" alt="Al Filo del Mañana" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>Al Filo del Mañana</h6>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="col-2">
+                              <div class="card card-pelis">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/p-relacionadas/boderlands.jpg" alt="Borderlands" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>Borderlands</h6>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="col-2">
+                              <div class="card card-pelis">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/p-relacionadas/freeGuy.jpg" alt="Free Guy" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>Free Guy</h6>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="card card-pelis">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/p-relacionadas/juegoEnder.jpg" alt="Juego Ender" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>Juego Ender</h6>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="card card-pelis">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/p-relacionadas/kingsman.jpg" alt="Kingsman" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>Kingsman</h6>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="card card-pelis">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/p-relacionadas/LaUltimaGuerrera.webp" alt="La Ultima Guerrera" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>La Ultima Guerrera</h6>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    <!--Pelis 6+-->
+                    <div class="carousel-item">
+                      <div class="row g-3 justify-content-center">
+                        <div class="col-2">
+                          <div class="card card-pelis">
+                            <a href="../pages/error404.html">
+                              <img src="../img/p-relacionadas/MortalEngines.jpg" alt="Mortal Engines" class="card-img-top">
+                              <div class="card-body p-2">
+                                <h6>Mortal Engines</h6>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <div class="card card-pelis">
+                            <a href="../pages/error404.html">
+                              <img src="../img/p-relacionadas/PacificRim.jpg" alt="Pacific Rim" class="card-img-top">
+                              <div class="card-body p-2">
+                                <h6>Pacific Rim</h6>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <div class="card card-pelis">
+                            <a href="../pages/error404.html">
+                              <img src="../img/p-relacionadas/TheMartian.jpg" alt="The Martian" class="card-img-top">
+                              <div class="card-body p-2">
+                                <h6>The Martian</h6>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <div class="card card-pelis">
+                            <img src="../img/p-relacionadas/tron.jpg" alt="Tron" class="card-img-top">
+                            <div class="card-body p-2">
+                              <h6>Tron</h6>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <div class="card card-pelis">
+                            <img src="../img/p-relacionadas/valerian.jpg" alt="Valerian" class="card-img-top">
+                            <div class="card-body p-2">
+                              <h6>Valerian</h6>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <div class="card card-pelis">
+                            <img src="../img/p-relacionadas/VigilanteDelFuturo.jpg" alt="Vigilante del Futuro" class="card-img-top">
+                            <div class="card-body p-2">
+                              <h6>Vigilante del Futuro</h6>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    </div>
+
+                    <!--botones-->
+                    <button class="carousel-control-prev btn-carousel" type="button" data-bs-target="#carouselPelis1" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon icono-carousel"></span>
+                    </button>
+
+                    <button class="carousel-control-next btn-carousel" type="button" data-bs-target="#carouselPelis1" data-bs-slide="next">
+                      <span class="carousel-control-next-icon icono-carousel"></span>
+                    </button>
+                  </div>
+                </article>
+                <article class="carousel-md"> <!-- Carousel para disp sm y md-->
+          <div class="contenedor">
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-relacionadas/alFilodelMañana.jpg" alt="Al Filo del Mañana">
+                <div class="card-body p-2">
+                    <h6>Al Filo del Mañana</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-relacionadas/boderlands.jpg" alt="Borderlands">
+                <div class="card-body p-2">
+                    <h6>Borderlands</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-relacionadas/freeGuy.jpg" alt="Free Guy">
+                <div class="card-body p-2">
+                    <h6>Free Guy</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-relacionadas/juegoEnder.jpg" alt="Juego Ender">
+                <div class="card-body p-2">
+                    <h6>Juego Ender</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-relacionadas/kingsman.jpg" alt="Kingsman">
+                <div class="card-body p-2">
+                    <h6>Kingsman</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-relacionadas/LaUltimaGuerrera.webp" alt="La Ultima Guerrera">
+                <div class="card-body p-2">
+                    <h6>La Ultima Guerrera</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-relacionadas/MortalEngines.jpg" alt="Mortal Engines">
+                <div class="card-body p-2">
+                    <h6>Mortal Engines</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-relacionadas/PacificRim.jpg" alt="Pacific Rim">
+                <div class="card-body p-2">
+                    <h6>Pacific Rim</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-relacionadas/TheMartian.jpg" alt="The Martian">
+                <div class="card-body p-2">
+                    <h6>The Martian</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-relacionadas/tron.jpg" alt="Tron">
+                <div class="card-body p-2">
+                    <h6>Tron</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-relacionadas/valerian.jpg" alt="Valerian">
+                <div class="card-body p-2">
+                    <h6>Valerian</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-relacionadas/VigilanteDelFuturo.jpg" alt="Vigilante del Futuro">
+                <div class="card-body p-2">
+                    <h6>Vigilante del Futuro</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </article>
+          </article>
+        </section>
+        
+        <!--Pelis en Estreno-->
+        <section class="container mt-5"> 
+          <article class="container">
+              <h4 class="titulo-seccion pb-lg-3"> Pelis en Estreno</h4>
+                <article class="carousel-lg pb-5"> <!-- Carousel para disp large -->
+                  <div id="carouselEstrenos" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="container">
+                          <div class="row g-3 justify-content-center">
+                            <div class="col-2">
+                              <div class="card card-pelis">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/p-estreno/CivilWar.jpg" alt="Civil War" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>Civil War</h6>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="col-2">
+                              <div class="card card-pelis">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/p-estreno/Dragon.jpg" alt="Como Entregar a tu Dragon" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>Como Entregar a tu Dragon</h6>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="col-2">
+                              <div class="card card-pelis">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/p-estreno/dune.jpg" alt="D.U.N.E" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>D.U.N.E</h6>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="card card-pelis">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/p-estreno/JohnWick.jpg" alt="John Wick 4" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>John Wick 4</h6>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="card card-pelis">
+                                <a href="../pages/error404.html">
+                                  <img src="../img/p-estreno/JurassicWorld.jpg" alt="Jurassic World" class="card-img-top">
+                                  <div class="card-body p-2">
+                                    <h6>Jurassic World</h6>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                            <div class="card card-pelis">
+                              <a href="../pages/error404.html">
+                                <img src="../img/p-estreno/LosIlusionistas3.jpg" alt="Los Ilusionistas 3" class="card-img-top">
+                                <div class="card-body p-2">
+                                  <h6>Los Ilusionistas 3</h6>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    <!--Pelis 6+-->
+                    <div class="carousel-item">
+                      <div class="row g-3 justify-content-center">
+                        <div class="col-2">
+                          <div class="card card-pelis">
+                            <a href="../pages/error404.html">
+                              <img src="../img/p-estreno/megan2.0.jpg" alt="Megan 2.0" class="card-img-top">
+                              <div class="card-body p-2">
+                                <h6>Megan 2.0</h6>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <div class="card card-pelis">
+                            <a href="../pages/error404.html">
+                              <img src="../img/p-estreno/MoonFall.jpg" alt="Moonfall" class="card-img-top">
+                              <div class="card-body p-2">
+                                <h6>Moonfall</h6>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <div class="card card-pelis">
+                            <a href="../pages/error404.html">
+                              <img src="../img/p-estreno/Observados.jpg" alt="Observados" class="card-img-top">
+                              <div class="card-body p-2">
+                                <h6>Observados</h6>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <div class="card card-pelis">
+                            <a href="../pages/error404.html">
+                              <img src="../img/p-estreno/oppenheimer.jpg" alt="Oppenheimer" class="card-img-top">
+                              <div class="card-body p-2">
+                                <h6>Oppenheimer</h6>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        
+                        <div class="col-2">
+                          <div class="card card-pelis">
+                            <a href="../pages/error404.html">
+                              <img src="../img/p-estreno/topGun.jpg" alt="Top Gun" class="card-img-top">
+                              <div class="card-body p-2">
+                                <h6>Top Gun</h6>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <div class="card card-pelis">
+                            <a href="../pages/error404.html">
+                              <img src="../img/p-estreno/TronAres.jpg" alt="Tron Ares" class="card-img-top">
+                              <div class="card-body p-2">
+                                <h6>Tron Ares</h6>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    </div>
+
+                    <!--botones-->
+                    <button class="carousel-control-prev btn-carousel" type="button" data-bs-target="#carouselEstrenos" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon icono-carousel"></span>
+                    </button>
+
+                    <button class="carousel-control-next btn-carousel" type="button" data-bs-target="#carouselEstrenos" data-bs-slide="next">
+                      <span class="carousel-control-next-icon icono-carousel"></span>
+                    </button>
+                  </div>
+                </article>
+                <article class="carousel-md"> <!-- Carousel para disp sm y md-->
+          <div class="contenedor">
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-estreno/CivilWar.jpg" alt="Civil War" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>Civil War</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-estreno/Dragon.jpg" alt=" Como entrenar a tu Dragon" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>Como entrenar a tu Dragon</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-estreno/dune.jpg" alt="D.U.N.E." class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>D.U.N.E.</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-estreno/JohnWick.jpg" alt="John Wick 4" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>John Wick 4</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-estreno/JurassicWorld.jpg" alt="Jurassic World" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>Jurassic World</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-estreno/LosIlusionistas3.jpg" alt="Los Ilusionistas 3" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>Los Ilusionistas 3</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-estreno/megan2.0.jpg" alt="Megan 2.0" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>Megan 2.0</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-estreno/MoonFall.jpg" alt="MoonFall" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>MoonFall</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-estreno/Observados.jpg" alt="Observados" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>Observados</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-estreno/oppenheimer.jpg" alt="Oppenheimer" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>Oppenheimer</h6>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="../pages/error404.html">
+                <img src="../img/p-estreno/topGun.jpg" alt="Top Gun" class="card-img-top">
+                <div class="card-body p-2">
+                  <h6>Top Gun</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </article>
+          </article>
+        </section>
+
+
+        
     </main>
     <footer class="bg-dark-subtle text-white pt-4 pb-3">
         <div class="container">
             <div class="row text-center text-md-start">
                 <!-- Columna 1: Logo y redes -->
                 <div class="col-12 col-md-12 col-lg-4 mb-3">
-                    <img src="./img/logoNavbar.png" alt="Logotipo" width="120" />
-                    <a href="./pages/error404.html" class="text-white me-3">
+                    <img src="../img/logoNavbar.png" alt="Logotipo" width="120" />
+                    <a href="../pages/error404.html" class="text-white me-3">
                         <i class="bi bi-facebook"></i>
                     </a>
-                    <a href="./pages/error404.html" class="text-white me-3">
+                    <a href="../pages/error404.html" class="text-white me-3">
                         <i class="bi bi-instagram"></i>
                     </a>
-                    <a href="./pages/error404.html" class="text-white">
+                    <a href="../pages/error404.html" class="text-white">
                         <i class="bi bi-twitter"></i>
                     </a>
                 </div>
@@ -145,12 +681,12 @@
                             >
                         </li>
                         <li>
-                            <a href="../pages/detallePelicula.html" class="text-white me-3"
+                            <a href="../pages/error404.html" class="text-white me-3"
                             >Películas</a
                             >
                         </li>
                         <li>
-                            <a href="../pages/detalleSerie.html" class="text-white me-3"
+                            <a href="../pages/error404.html" class="text-white me-3"
                             >Series</a
                             >
                         </li>
@@ -213,6 +749,7 @@
 </p>
 </div>
 </footer>
+    
 <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
