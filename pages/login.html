@@ -20,34 +20,82 @@
     <link rel="stylesheet" href="../css/style.css" />
     <title>PMR Plus</title>
   </head>
-  <body class="d-flex flex-column min-vh-100">
+  <body class="d-flex flex-column vh-100">
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-dark ">
-          <div class="container-fluid">
-                <!-- Logo -->
-                <a class="navbar-brand fw-bold d-flex alingn-items-center" href="../index.html">
-                    <img src="../img/logoNavbar.png" alt="PMG logo"  class="logo-nav">
-                  </a>
-          </div>
-        </nav>    
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a
+            class="navbar-brand fw-bold d-flex alingn-items-center"
+            href="../index.html"
+          >
+            <img src="../img/logoNavbar.png" alt="PMG logo" class="logo-nav" />
+          </a>
+        </div>
+      </nav>
     </header>
-    <main class="d-flex flex-grow-1 justify-content-center align-items-center">
-      <form class="w-25 border rounded-5 p-4">
-        <div class="mb-3">
-          <label for="email" class="form-label">Correo electrónico</label>
-          <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required maxlength="100">
+    <main class="d-flex flex-column flex-grow-1 justify-content-center">
+      <section class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4">
+            <h3 class="text-center titulo-login">Iniciar sesion en PMR-PLUS</h3>
+            <form class="w-100 w-md-50 w-lg-25 border rounded-5 p-4 mt-3">
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Ingresa tu correo"
+                  required
+                  maxlength="100"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="Contraseña" class="form-label">Clave</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="Contraseña"
+                  placeholder="Ingresa tu clave"
+                  required
+                  maxlength="50"
+                />
+              </div>
+              <div class="d-flex justify-content-center">
+                <a href="../pages/error404.html" class="text-decoration-none"
+                  >¿olvistaste tu contraseña?</a
+                >
+              </div>
+              <a href="../pages/error404.html"
+                ><button type="button" class="btn btn-info fw-bold w-100 mt-3">
+                  Ingresar
+                </button></a
+              >
+            </form>
+            <div class="text-center mt-5">
+              <p class="fw-bold registrare mb-0">¿Aún no tienes una cuenta?</p>
+              <a
+                href="../pages/suscripcion.html"
+                class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                ><p class="text-info fw-semibold">Registrate.</p></a
+              >
+            </div>
+            <p class="pt-5 text-center text-md- text-body-tertiary small">
+              Al iniciar sesión en PMR, usted acepta nuestros
+              <span class="text-decoration-underline"
+                >términos de servicio</span
+              >
+              y
+              <span class="text-decoration-underline"
+                >politica de privacidad</span
+              >
+            </p>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="Contraseña" class="form-label">Clave</label>
-          <input type="password" class="form-control" id="Contraseña" placeholder="ingresa tu clave" required maxlength="50">
-        </div>
-        <div class="d-flex justify-content-between">
-        <a href="">olvistaste tu contraseña?</a>
-        <a href="">No tengo cuenta</a>
-        </div>
-      </form>
+      </section>
     </main>
-    
-<script src="../js/bootstrap.bundle.min.js"></script>
-</body>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
